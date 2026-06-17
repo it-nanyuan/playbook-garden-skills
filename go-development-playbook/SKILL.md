@@ -12,10 +12,30 @@ description: Build maintainable Go services with clear engineering standards. Us
 ## Workflow
 
 1. 先判断项目类型：HTTP API、内部服务、微服务、CLI、任务调度器或基础设施工具。
-2. 如果是已有项目，优先跟随现有目录结构、依赖选择和包边界。
-3. 新增需求前先判断属于 handler、service、repository、client、job、config 还是 shared package。
-4. 优先用小 package 和清晰边界组织代码，不让单个包无限膨胀。
-5. 编码时重视注释、错误处理、上下文传递、日志和测试。
+2. 再确认已有项目在用什么 HTTP 框架、ORM、日志和配置方案，不要默认切换。
+3. 如果是已有项目，优先跟随现有目录结构、依赖选择和包边界。
+4. 新增需求前先判断属于 handler、service、repository、client、job、config 还是 shared package。
+5. 优先用小 package 和清晰边界组织代码，不让单个包无限膨胀。
+6. 编码时重视注释、错误处理、上下文传递、日志和测试。
+
+## First Question
+
+做 Go 项目时，第一优先级问题是：
+
+- 这是 HTTP API、微服务、Worker、CLI 工具，还是基础设施型工具？
+
+第二优先级问题是：
+
+- 当前项目使用 `gin`、`echo`、`chi` 还是标准库？数据库层是 `gorm`、`sqlx`、`ent`，还是标准库封装？
+
+判断规则：
+
+- HTTP API：优先明确路由、中间件、鉴权、返回体和可观测性要求
+- 微服务：优先明确服务边界、配置中心、注册发现、MQ、熔断和链路追踪
+- Worker / Job：优先明确重试、幂等、任务拆分和失败补偿
+- CLI / Infra Tool：优先明确输入输出、执行环境、配置注入和日志级别
+
+如果用户没说明清楚，就先问；不要一边写代码一边默认工程形态和框架。
 
 ## Core Rules
 
@@ -73,6 +93,15 @@ description: Build maintainable Go services with clear engineering standards. Us
 
 详细见 `references/logging.md`。
 
+## Cache And Messaging Standard
+
+- Redis key、topic、consumer group、stream 或 subject 命名要统一
+- 缓存、消息和数据库一致性策略要明确，不允许各模块各写各的
+- 消费逻辑必须考虑幂等、重试、超时、失败告警和死信处理
+- 事件驱动适合做解耦，但不要把核心同步链路隐式拆散到难以排查
+
+详细见 `references/cache-messaging.md`。
+
 ## Testing Standard
 
 - 核心业务、错误分支、边界条件和并发相关逻辑要有测试
@@ -103,6 +132,18 @@ description: Build maintainable Go services with clear engineering standards. Us
 
 详细见 `references/libraries.md`。
 
+## Framework Guidance
+
+- `gin`：常见于业务 API 和中后台服务，生态成熟，上手快
+- `echo`：API 开发体验直接，项目少量抽象时也够用
+- `chi`：更轻量，适合强调标准库风格和可控组合的项目
+- 标准库：适合基础设施工具、轻量服务或已有较强公共基建的团队
+- `gorm`：上手快，但要警惕复杂查询和隐式行为
+- `sqlx`：更贴近 SQL，适合强调查询可控和性能感知的服务
+- `ent`：适合对 schema、代码生成和类型安全要求更高的项目
+
+详细见 `references/framework-selection.md`。
+
 ## When To Use
 
 - 用户要开始一个 Go 后端或服务项目
@@ -117,9 +158,11 @@ description: Build maintainable Go services with clear engineering standards. Us
 - `references/api-standard.md`
 - `references/error-handling.md`
 - `references/logging.md`
+- `references/cache-messaging.md`
 - `references/testing.md`
 - `references/security.md`
 - `references/libraries.md`
+- `references/framework-selection.md`
 
 ## Platform Adapters
 

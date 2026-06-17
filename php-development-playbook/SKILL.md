@@ -114,6 +114,14 @@ description: Build maintainable PHP backend services with clear architecture and
 
 详细见 `references/security.md`。
 
+## Runtime And Deployment Standard
+
+- `PHP-FPM`、队列 Worker、定时任务、`Swoole / Hyperf` 常驻进程要区分运行时约束
+- 常驻进程环境下不能默认沿用传统 PHP “请求结束即释放状态”的心智
+- 发布时要明确配置加载、缓存预热、队列重启、Supervisor 或进程管理和回滚方式
+
+详细见 `references/runtime-deployment.md`。
+
 ## Recommended Stack
 
 - Framework：`Laravel`、`Symfony`、`Hyperf`、`ThinkPHP` 按项目现状选择
@@ -157,6 +165,7 @@ description: Build maintainable PHP backend services with clear architecture and
 - `references/cache-queue.md`
 - `references/testing.md`
 - `references/security.md`
+- `references/runtime-deployment.md`
 - `references/libraries.md`
 - `references/framework-selection.md`
 

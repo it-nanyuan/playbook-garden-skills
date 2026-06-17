@@ -12,10 +12,31 @@ description: Build maintainable Python services with clear engineering standards
 ## Workflow
 
 1. 先判断项目类型：API 服务、任务 worker、自动化工具、CLI、数据处理服务还是脚本集合。
-2. 如果是已有项目，先跟随现有框架、依赖管理和目录结构。
-3. 新增需求前先判断属于 router、service、repository、schema、task、client 还是 shared module。
-4. 优先按模块职责拆分代码，不让单个 `app.py` 或 `service.py` 无限膨胀。
-5. 编码时重视注释、错误处理、测试、配置管理和依赖约束。
+2. 再确认项目使用的是 `FastAPI`、`Flask`、`Django`、异步 worker 体系，还是内部脚本型工程。
+3. 如果是已有项目，先跟随现有框架、依赖管理和目录结构。
+4. 新增需求前先判断属于 router、service、repository、schema、task、client 还是 shared module。
+5. 优先按模块职责拆分代码，不让单个 `app.py` 或 `service.py` 无限膨胀。
+6. 编码时重视注释、错误处理、测试、配置管理和依赖约束。
+
+## First Question
+
+做 Python 项目时，第一优先级问题是：
+
+- 这是 `FastAPI`、`Flask`、`Django`、Worker / Celery 项目、CLI 工具，还是脚本集合？
+
+第二优先级问题是：
+
+- 当前项目的依赖管理方式是什么？使用 `uv`、`poetry`、`pip-tools`、`requirements.txt`，还是团队已有方案？
+
+判断规则：
+
+- `FastAPI`：更适合现代 API、类型约束、异步接口和文档能力
+- `Flask`：更轻量，适合小中型服务或已有生态项目
+- `Django`：适合后台、管理系统和 ORM / Admin 能力更重的项目
+- Worker / Celery：优先明确队列、重试、幂等、调度和失败补偿
+- 脚本集合：优先考虑是否应该升级为可维护模块，而不是继续堆散脚本
+
+如果用户没说明清楚，就先问；不要直接默认框架和依赖管理方式。
 
 ## Core Rules
 
@@ -65,6 +86,14 @@ description: Build maintainable Python services with clear engineering standards
 
 详细见 `references/testing.md`。
 
+## Logging And Task Standard
+
+- 日志格式、traceId、requestId、任务 ID 和异常上下文要统一
+- Celery / RQ / 异步任务要明确重试、幂等、超时、失败补偿和告警
+- API 服务和后台任务共享公共模块时，要明确线程 / 进程 / 协程边界
+
+详细见 `references/logging.md` 与 `references/tasks.md`。
+
 ## Security And Dependency Standard
 
 - 敏感配置、权限边界、参数校验、外部调用超时和重试要统一
@@ -87,6 +116,16 @@ description: Build maintainable Python services with clear engineering standards
 
 详细见 `references/libraries.md`。
 
+## Framework Guidance
+
+- `FastAPI`：适合 API 优先、类型约束清晰、异步能力较强的项目
+- `Flask`：适合结构较轻、历史项目较多或想保留更多自定义空间的服务
+- `Django`：适合后台系统、内容系统、管理能力较重的项目
+- `Celery`：适合成熟异步任务体系，但必须补齐重试、幂等和可观测性
+- `RQ`：更轻量，适合简单队列任务
+
+详细见 `references/framework-selection.md`。
+
 ## When To Use
 
 - 用户要开始一个 Python 服务、API、worker 或工具项目
@@ -100,10 +139,13 @@ description: Build maintainable Python services with clear engineering standards
 - `references/structure.md`
 - `references/api-standard.md`
 - `references/error-handling.md`
+- `references/logging.md`
+- `references/tasks.md`
 - `references/testing.md`
 - `references/security.md`
 - `references/dependencies.md`
 - `references/libraries.md`
+- `references/framework-selection.md`
 
 ## Platform Adapters
 
