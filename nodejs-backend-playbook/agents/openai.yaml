@@ -1,0 +1,4 @@
+interface:
+  display_name: "Node.js Backend Playbook"
+  short_description: "Node.js 与 TypeScript 后端开发规范，强调分层、注释、测试和运行时边界。"
+  default_prompt: "Use this skill when planning or implementing Node.js or TypeScript backend services, APIs, workers, BFF layers, or business modules that need maintainable structure, comments, testing, dependency discipline, and production-ready runtime conventions."

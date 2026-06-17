@@ -1,0 +1,13 @@
+---
+description: Node.js and TypeScript backend engineering rules for maintainable APIs, workers, and BFF services.
+globs:
+  - "**/*.ts"
+  - "**/*.js"
+alwaysApply: false
+---
+
+- Use this rule when working on Node.js or TypeScript backend code.
+- First clarify the framework, runtime shape, and package manager.
+- Keep `controller`, `service`, `repository`, and `jobs` responsibilities separate.
+- Do not place complete business workflows in route handlers.
+- Handle timeout, retry, idempotency, and shutdown behavior explicitly.
