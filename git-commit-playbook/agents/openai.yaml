@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Commit Playbook"
+  short_description: "Write clear, structured Git commit messages"
+  default_prompt: "Use $git-commit-playbook to draft a clear Git commit message for the current changes."
