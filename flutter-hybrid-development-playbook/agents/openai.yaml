@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flutter Hybrid Development Playbook"
+  short_description: "Build modular Flutter apps with shared standards"
+  default_prompt: "Use $flutter-hybrid-development-playbook to design or implement modular Flutter features with reuse, package boundaries, melos, and maintainable hybrid project standards."

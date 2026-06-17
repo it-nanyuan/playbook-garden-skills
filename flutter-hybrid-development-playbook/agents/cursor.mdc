@@ -1,0 +1,14 @@
+---
+description: Flutter hybrid engineering rules for modular implementation
+globs:
+alwaysApply: false
+---
+
+# Flutter Hybrid Development Playbook
+
+When implementing Flutter work:
+
+- Keep package boundaries, reuse, and bridge ownership clear.
+- Split large widgets and feature logic cleanly.
+- Comment shared packages, bridge contracts, and business-critical state.
+- If UI design is involved, also follow the repository's admin UI quality rules.
