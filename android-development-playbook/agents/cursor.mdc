@@ -1,0 +1,14 @@
+---
+description: Android engineering rules for maintainable feature implementation
+globs:
+alwaysApply: false
+---
+
+# Android Development Playbook
+
+When implementing Android work:
+
+- Keep UI, domain, and data boundaries clear.
+- Reuse common components and use cases.
+- Comment business state, async behavior, and shared modules.
+- If UI design is involved, also follow the repository's admin UI quality rules.

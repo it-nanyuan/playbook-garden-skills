@@ -1,0 +1,4 @@
+interface:
+  display_name: "Android Development Playbook"
+  short_description: "Build maintainable Android apps with clear standards"
+  default_prompt: "Use $android-development-playbook to plan or implement Android features with clear Kotlin structure, comments, reuse, componentization, and modular standards."
