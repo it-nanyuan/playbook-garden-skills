@@ -1,0 +1,14 @@
+---
+description: DevOps safety rules for deployment and operational work
+globs:
+alwaysApply: false
+---
+
+# DevOps Playbook
+
+When doing operational work:
+
+- Confirm environment and task type first.
+- Require rollback planning for production changes.
+- Keep configuration traceable.
+- Verify health, logs, and monitoring after execution.

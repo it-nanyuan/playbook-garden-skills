@@ -1,0 +1,4 @@
+interface:
+  display_name: "DevOps Playbook"
+  short_description: "Operate services with safe deployment standards"
+  default_prompt: "Use $devops-playbook to plan or execute deployment, environment, monitoring, rollback, and operational work with strong safety standards."
