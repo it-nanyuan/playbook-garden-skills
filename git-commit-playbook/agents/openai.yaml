@@ -1,4 +1,4 @@
 interface:
   display_name: "Git Commit Playbook"
   short_description: "Write clear, structured Git commit messages"
-  default_prompt: "Use $git-commit-playbook to draft a clear Git commit message for the current changes."
+  default_prompt: "Use $git-commit-playbook to inspect the current diff and draft a commit message with a required type prefix plus a numbered change list."

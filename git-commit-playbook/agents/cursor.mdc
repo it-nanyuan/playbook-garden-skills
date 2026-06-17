@@ -1,0 +1,47 @@
+---
+description: Git commit writing rules for structured commit messages
+globs:
+alwaysApply: false
+---
+
+# Git Commit Playbook
+
+When asked to draft a Git commit message:
+
+- Inspect the real repository changes first.
+- Check `git status`, staged diff, and unstaged diff when available.
+- Suggest splitting the work if unrelated changes are bundled together.
+- If the user says not to commit yet, only draft the message.
+
+## Required Format
+
+```text
+<type>: <one-line summary>
+
+1. <specific change 1>
+2. <specific change 2>
+3. <specific change 3>
+```
+
+## Required Prefixes
+
+The title must use one of:
+
+- `feat:`
+- `fix:`
+- `refactor:`
+- `docs:`
+- `style:`
+- `test:`
+- `build:`
+- `ci:`
+- `chore:`
+- `perf:`
+- `revert:`
+
+## Quality Rules
+
+- The summary line must clearly state what changed.
+- The numbered list must describe concrete changes, not generic phrases.
+- If `.gitignore` was added or updated, call that out explicitly.
+- Prefer 2 to 6 numbered items unless the diff is smaller.

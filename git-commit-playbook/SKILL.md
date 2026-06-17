@@ -124,3 +124,20 @@ docs: 初始化提交规范并补齐基础忽略规则
 - 用户要求“根据当前 diff 总结提交内容”
 - 用户强调“标题先概括，再一条条列出做了什么”
 - 用户要求“提交标题必须带 `feat:`、`fix:` 一类前缀”
+
+## Platform Adapters
+
+如果需要把这个 skill 接到不同平台：
+
+- 核心规范始终以当前 `SKILL.md` 为准
+- 平台可消费产物放在 `agents/`
+- 平台接入说明放在 `references/platforms/`
+
+优先查看：
+
+- `references/platforms/README.md`
+- `references/platforms/openai.md`
+- `references/platforms/claude.md`
+- `references/platforms/cursor.md`
+- `references/platforms/gemini.md`
+- `references/platforms/copilot.md`
