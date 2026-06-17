@@ -162,7 +162,7 @@
 如果平台只支持“单个 skill 安装”，建议这样理解：
 
 - 开发类 skill 尽量自带自己的核心规则
-- `frontend / ios / android / flutter` 已经内嵌了精简版 UI 核心规则
+- `frontend / ios / android / flutter / react-native` 已经内嵌了精简版 UI 核心规则
 - `admin-ui-design-playbook` 仍然是总设计规范，但不是单装开发 skill 时唯一的 UI 规则来源
 
 推荐组合：
@@ -173,6 +173,7 @@
 | `ios-development-playbook` | `admin-ui-design-playbook` |
 | `android-development-playbook` | `admin-ui-design-playbook` |
 | `flutter-hybrid-development-playbook` | `admin-ui-design-playbook` |
+| `react-native-development-playbook` | `admin-ui-design-playbook` |
 
 ## Recommended Usage
 

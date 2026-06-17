@@ -104,6 +104,8 @@ description: Build maintainable React Native applications with modular engineeri
 
 如果任务涉及 React Native 界面设计、组件呈现、业务页面结构、工作台风格或跨端视觉规范，默认同时参考 `admin-ui-design-playbook`。
 
+这意味着即使用户只安装 `react-native-development-playbook`，也仍然会先按当前 skill 内嵌的 UI 基线工作；而在需要更完整设计规则时，再继续联动 `admin-ui-design-playbook` 作为总设计规范。
+
 执行规则：
 
 - 不要只做功能拆分，也要保证页面呈现符合商用品质标准
