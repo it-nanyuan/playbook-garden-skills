@@ -1,0 +1,15 @@
+---
+description: iOS engineering rules for maintainable feature implementation
+globs:
+alwaysApply: false
+---
+
+# iOS Development Playbook
+
+When implementing iOS work:
+
+- Follow single-type-per-file structure.
+- Use extensions to separate concerns clearly.
+- Reuse shared components and services.
+- Comment public APIs, async behavior, and complex state.
+- If UI design is involved, also follow the repository's admin UI quality rules.

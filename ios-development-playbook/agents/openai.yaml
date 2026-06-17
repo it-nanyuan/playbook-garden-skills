@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS Development Playbook"
+  short_description: "Build maintainable iOS apps with clear standards"
+  default_prompt: "Use $ios-development-playbook to plan or implement iOS features with clear structure, comments, reuse, extension-based organization, and modular standards."
