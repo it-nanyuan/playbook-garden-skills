@@ -1,0 +1,15 @@
+---
+description: Commercial admin UI design rules
+globs:
+alwaysApply: false
+---
+
+# Admin UI Design Playbook
+
+When designing or implementing admin UI:
+
+- Clarify style, competitors, users, and core tasks first.
+- Avoid generic AI-looking mockups.
+- Prefer professional business layouts over decorative card-heavy pages.
+- Use clear navigation, structured content regions, readable filters, and operationally useful tables.
+- Avoid large titles and long descriptive text unless the product genuinely needs them.

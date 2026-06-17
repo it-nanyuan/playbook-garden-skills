@@ -1,0 +1,4 @@
+interface:
+  display_name: "Admin UI Design Playbook"
+  short_description: "Design professional commercial admin interfaces"
+  default_prompt: "Use $admin-ui-design-playbook to clarify style, competitors, users, and stack first, then design a professional commercial admin UI instead of a text-heavy mockup."
