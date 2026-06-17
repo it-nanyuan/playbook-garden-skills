@@ -33,6 +33,7 @@
 | Skill | 方向 | 主要用途 | 关键约束 |
 | --- | --- | --- | --- |
 | `git-commit-playbook` | Git 提交规范 | 统一提交标题、前缀、正文和语言确认流程 | 标题强制 `type: summary`；正文必须编号列出改动；语言不明确时先确认中文或英文 |
+| `comment-style-playbook` | 跨语言注释规范 | 统一类、方法、字段、模块和复杂逻辑的注释写法 | 关键公共能力必须写职责；复杂流程必须写意图；注释强调边界、副作用和约束 |
 
 ### Design
 
@@ -48,12 +49,16 @@
 | `ios-development-playbook` | iOS 开发规范 | 规范 Swift / SwiftUI / UIKit 项目开发 | 单文件单主类型；扩展拆分；注释、复用、组件化、模块化，并内嵌精简版 UI 基线 |
 | `android-development-playbook` | Android 开发规范 | 规范 Kotlin / Compose / Android 工程开发 | 单文件单主类型；UI / Domain / Data 分层；组件化与状态边界清晰，并内嵌精简版 UI 基线 |
 | `flutter-hybrid-development-playbook` | Flutter 混合开发规范 | 规范中大型 Flutter 和混合应用开发 | 强调功能拆分、组件化、package 化、桥接边界和 `melos` 管理，并内嵌精简版 UI 基线 |
+| `go-development-playbook` | Go 开发规范 | 规范 Go API、服务、任务和基础设施工具开发 | 强调 package 边界、错误处理、context 传递、日志、测试和生产可观测性 |
+| `python-development-playbook` | Python 开发规范 | 规范 Python API、worker、脚本服务和工具开发 | 强调模块职责、依赖管理、类型意识、测试、配置边界和可维护性 |
 
 ### Backend
 
 | Skill | 方向 | 主要用途 | 关键约束 |
 | --- | --- | --- | --- |
 | `java-development-playbook` | Java 后端开发规范 | 规范单体与微服务 Java 项目开发 | 先问单体还是微服务；`service` 必须配 `service.impl`；统一接口、事务、异常、日志、缓存、命名和微服务组件约束 |
+| `go-development-playbook` | Go 后端开发规范 | 规范 Go API、服务、微服务和基础设施工具开发 | handler / service / repository 分层清晰；统一错误、日志、超时、测试和依赖边界 |
+| `python-development-playbook` | Python 后端开发规范 | 规范 Python API、worker、自动化工具和服务开发 | router / service / repository 分层清晰；统一校验、异常、测试、依赖和配置方式 |
 
 ### Data And Operations
 
@@ -67,12 +72,15 @@
 | 你现在要做什么 | 建议优先使用 |
 | --- | --- |
 | 写规范化 commit message | `git-commit-playbook` |
+| 统一跨语言注释风格 | `comment-style-playbook` |
 | 设计后台、工作台、控制台 UI | `admin-ui-design-playbook` |
 | 做 React / Vue 页面或中后台前端 | `frontend-development-playbook` |
 | 做 iOS 页面或功能开发 | `ios-development-playbook` |
 | 做 Android 页面或功能开发 | `android-development-playbook` |
 | 做 Flutter / 混合应用开发 | `flutter-hybrid-development-playbook` |
 | 做 Java 单体或微服务后端 | `java-development-playbook` |
+| 做 Go API、服务或内部工具 | `go-development-playbook` |
+| 做 Python API、worker 或自动化服务 | `python-development-playbook` |
 | 做 SQL、索引、迁移、生产数据修复 | `dba-playbook` |
 | 做发布、监控、回滚、集群与环境配置 | `devops-playbook` |
 
@@ -167,10 +175,11 @@
 目前这套仓库已经覆盖：
 
 - Git 提交规范
+- 跨语言注释规范
 - 商用后台 UI 设计规范
 - 前端工程规范
 - iOS / Android / Flutter 开发规范
-- Java 后端规范
+- Java / Go / Python 后端规范
 - DBA 规范
 - 运维 / DevOps 规范
 
