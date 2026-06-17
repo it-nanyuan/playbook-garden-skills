@@ -52,6 +52,7 @@ description: Build maintainable Java backend services with clear architecture an
 - 注释写“为什么”和“业务含义”，不要只写“查询数据”“保存对象”这种废话
 
 详细注释规范见 `references/comments.md`。
+跨语言注释母规范参考 `comment-style-playbook`。
 
 ## Structure Standard
 

@@ -34,6 +34,7 @@ description: Build maintainable Android applications with clear engineering stan
 - 公共组件、基础库、领域服务、复杂状态管理优先补齐注释
 
 详细注释规范见 `references/comments.md`。
+跨语言注释母规范参考 `comment-style-playbook`。
 
 ## Structure Standard
 

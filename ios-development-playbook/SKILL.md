@@ -36,6 +36,7 @@ description: Build maintainable iOS applications with clear engineering standard
 - 复杂布局、状态切换或线程处理附近可以加短注释说明意图
 
 详细注释规范见 `references/comments.md`。
+跨语言注释母规范参考 `comment-style-playbook`。
 
 ## Structure Standard
 

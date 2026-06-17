@@ -35,6 +35,7 @@ description: Build professional, maintainable frontend applications with clear d
 - 复杂交互、表格列逻辑、权限逻辑、缓存逻辑和数据映射优先补注释
 
 详细见 `references/comments.md`。
+跨语言注释母规范参考 `comment-style-playbook`。
 
 ## Structure Standard
 

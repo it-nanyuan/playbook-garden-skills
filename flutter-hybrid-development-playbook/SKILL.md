@@ -35,6 +35,7 @@ description: Build maintainable Flutter-based hybrid applications with modular e
 - 公共 package、共享组件、桥接层、复杂状态管理优先补齐注释
 
 详细注释规范见 `references/comments.md`。
+跨语言注释母规范参考 `comment-style-playbook`。
 
 ## Structure Standard
 
