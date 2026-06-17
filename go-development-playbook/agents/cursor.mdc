@@ -1,0 +1,14 @@
+---
+description: Go backend engineering rules for maintainable services
+globs:
+alwaysApply: false
+---
+
+# Go Development Playbook
+
+When implementing Go work:
+
+- Keep package boundaries clear.
+- Handle errors explicitly.
+- Comment exported APIs and complex logic.
+- Preserve context, logging, and testability.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Go Development Playbook"
+  short_description: "Build maintainable Go services with clear standards"
+  default_prompt: "Use $go-development-playbook to plan or implement Go services with clear package structure, comments, error handling, observability, and production-oriented standards."
