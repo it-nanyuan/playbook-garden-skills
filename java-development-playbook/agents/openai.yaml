@@ -1,0 +1,4 @@
+interface:
+  display_name: "Java Development Playbook"
+  short_description: "Build maintainable Java backends with clear standards"
+  default_prompt: "Use $java-development-playbook to first clarify whether the Java project is monolithic or microservices, then choose the appropriate structure, comments, and middleware stack."

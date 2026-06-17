@@ -1,0 +1,14 @@
+---
+description: Java backend engineering rules for monolith and microservice projects
+globs:
+alwaysApply: false
+---
+
+# Java Development Playbook
+
+When implementing Java backend work:
+
+- Ask first whether the project is monolithic or microservices.
+- Keep comments, layering, and business boundaries clear.
+- Enforce `service` interfaces with `service.impl` implementations.
+- Use middleware based on business needs, not by default accumulation.
