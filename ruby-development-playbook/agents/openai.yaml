@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ruby Development Playbook"
+  short_description: "Ruby 开发规范，强调 Rails、后台任务、注释、测试与工程可维护性。"
+  default_prompt: "Use this skill when planning or implementing Ruby services, Rails applications, APIs, background jobs, or business modules that need clear architecture, comments, testing, runtime discipline, and production-oriented engineering standards."

@@ -56,6 +56,7 @@
 | `nodejs-backend-playbook` | Node.js 后端开发规范 | 规范 Node.js / TypeScript API、BFF、Worker 和脚本服务开发 | 先问 `NestJS / Express / Fastify` 与运行时形态；统一异步边界、依赖管理、任务和安全策略 |
 | `rust-development-playbook` | Rust 开发规范 | 规范 Rust API、异步服务、CLI、Worker 和库开发 | 先问工程形态、运行时和 crate 结构；强调错误建模、异步边界、性能意识和测试 |
 | `cpp-development-playbook` | C++ 开发规范 | 规范 C++ 类库、SDK、系统工具和高性能模块开发 | 先问构建系统、异常策略、资源管理和线程模型；强调 RAII、生命周期、并发和测试 |
+| `ruby-development-playbook` | Ruby 开发规范 | 规范 Ruby、Rails、API、后台任务和业务系统开发 | 先问 `Rails / Sinatra / Grape / Hanami` 与任务体系；强调 ActiveRecord、Job、注释、测试和运行时边界 |
 
 ### Backend
 
@@ -69,6 +70,7 @@
 | `nodejs-backend-playbook` | Node.js / TypeScript 后端规范 | 规范 Node.js API、BFF、Worker、定时任务和脚本服务开发 | 先问框架与运行时形态；统一 controller / service / repository / jobs 边界 |
 | `rust-development-playbook` | Rust 后端与系统开发规范 | 规范 Rust API、异步服务、CLI、Worker 和库开发 | 先问 API / CLI / Worker / 库；统一 crate 边界、错误建模、异步和性能规范 |
 | `cpp-development-playbook` | C++ 工程开发规范 | 规范 C++ 类库、SDK、系统工具、桌面模块和高性能组件开发 | 先问构建系统、异常策略和线程模型；统一资源管理、生命周期和并发规范 |
+| `ruby-development-playbook` | Ruby / Rails 后端规范 | 规范 Ruby、Rails、API、后台任务和业务系统开发 | 先问框架和任务体系；统一 controller / service / model / query / job 边界 |
 
 ### Data And Operations
 
@@ -96,6 +98,7 @@
 | 做 Node.js / TypeScript 后端、BFF 或 Worker | `nodejs-backend-playbook` |
 | 做 Rust 服务、CLI、Worker 或高性能工具 | `rust-development-playbook` |
 | 做 C++ 类库、SDK、系统工具或高性能组件 | `cpp-development-playbook` |
+| 做 Ruby、Rails、后台任务或业务系统 | `ruby-development-playbook` |
 | 做 SQL、索引、迁移、生产数据修复 | `dba-playbook` |
 | 做发布、监控、回滚、集群与环境配置 | `devops-playbook` |
 
@@ -194,7 +197,7 @@
 - 商用后台 UI 设计规范
 - 前端工程规范
 - iOS / Android / Flutter 开发规范
-- Java / Go / Python / PHP / C# / Node.js / Rust / C++ 后端与系统开发规范
+- Java / Go / Python / PHP / C# / Node.js / Rust / C++ / Ruby 后端与系统开发规范
 - DBA 规范
 - 运维 / DevOps 规范
 

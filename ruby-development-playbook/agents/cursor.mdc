@@ -1,0 +1,10 @@
+---
+description: Ruby and Rails engineering rules for maintainable applications, APIs, jobs, and business systems.
+globs:
+  - "**/*.rb"
+alwaysApply: false
+---
+
+- Clarify framework, app shape, and job system first.
+- Keep controllers thin and business orchestration outside transport layer.
+- Avoid model bloat and make job retry/idempotency behavior explicit.
