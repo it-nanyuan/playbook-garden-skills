@@ -1,0 +1,4 @@
+interface:
+  display_name: "C++ Development Playbook"
+  short_description: "C++ 开发规范，强调模块边界、资源管理、注释、测试与工程稳定性。"
+  default_prompt: "Use this skill when planning or implementing C++ services, libraries, desktop modules, high-performance components, or system-level code that need clear architecture, comments, memory discipline, testing, and maintainable engineering standards."

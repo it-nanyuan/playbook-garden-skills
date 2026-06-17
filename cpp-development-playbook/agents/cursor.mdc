@@ -1,0 +1,14 @@
+---
+description: C++ engineering rules for maintainable libraries, services, and system-level modules.
+globs:
+  - "**/*.cc"
+  - "**/*.cpp"
+  - "**/*.cxx"
+  - "**/*.h"
+  - "**/*.hpp"
+alwaysApply: false
+---
+
+- Clarify project shape, build system, ownership model, and threading rules first.
+- Prefer RAII, explicit boundaries, and testable interfaces.
+- Document ownership, lifetime, and non-obvious concurrency constraints.
