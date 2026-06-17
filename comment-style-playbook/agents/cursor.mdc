@@ -1,0 +1,13 @@
+---
+description: Cross-stack engineering comment rules
+globs:
+alwaysApply: false
+---
+
+# Comment Style Playbook
+
+When writing comments:
+
+- Explain responsibility, intent, constraints, side effects, and state changes.
+- Avoid comments that only repeat obvious code.
+- Prioritize public APIs, shared modules, async flows, and complex business rules.

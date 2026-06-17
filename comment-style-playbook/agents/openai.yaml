@@ -1,0 +1,4 @@
+interface:
+  display_name: "Comment Style Playbook"
+  short_description: "Write useful engineering comments across stacks"
+  default_prompt: "Use $comment-style-playbook to apply clear, maintainable comment rules for classes, methods, fields, shared components, and complex business logic."
