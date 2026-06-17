@@ -1,0 +1,16 @@
+---
+description: PHP backend development standards for maintainable services, APIs, and admin systems.
+globs:
+  - "**/*.php"
+alwaysApply: false
+---
+
+- Use this rule when working on PHP backend services, APIs, admin systems, jobs, listeners, or callback handlers.
+- First clarify whether the project uses `Laravel`, `Symfony`, `Hyperf`, `ThinkPHP`, or an existing custom framework.
+- Respect the existing project structure before introducing new layers or patterns.
+- Keep `Controller`, `Service`, `Repository`, `Model`, `DTO`, `Request`, `Resource`, and `Job` responsibilities clear.
+- Do not place complete business workflows or data access logic inside controllers.
+- Avoid scattering raw SQL through business code; keep complex queries in a clear data access layer.
+- Write comments for class responsibility, method side effects, business constraints, and non-obvious decisions.
+- Keep validation, response envelopes, exception handling, cache, queues, and security policies consistent.
+- Refer to `../SKILL.md` and `../references/` for full rules.

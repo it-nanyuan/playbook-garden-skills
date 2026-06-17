@@ -51,6 +51,7 @@
 | `flutter-hybrid-development-playbook` | Flutter 混合开发规范 | 规范中大型 Flutter 和混合应用开发 | 强调功能拆分、组件化、package 化、桥接边界和 `melos` 管理，并内嵌精简版 UI 基线 |
 | `go-development-playbook` | Go 开发规范 | 规范 Go API、服务、任务和基础设施工具开发 | 强调 package 边界、错误处理、context 传递、日志、测试和生产可观测性 |
 | `python-development-playbook` | Python 开发规范 | 规范 Python API、worker、脚本服务和工具开发 | 强调模块职责、依赖管理、类型意识、测试、配置边界和可维护性 |
+| `php-development-playbook` | PHP 开发规范 | 规范 PHP API、后台系统、任务和业务模块开发 | 先问 `Laravel / Symfony / Hyperf / ThinkPHP`；强调分层、注释、测试、缓存队列和安全边界 |
 
 ### Backend
 
@@ -59,6 +60,7 @@
 | `java-development-playbook` | Java 后端开发规范 | 规范单体与微服务 Java 项目开发 | 先问单体还是微服务；`service` 必须配 `service.impl`；统一接口、事务、异常、日志、缓存、命名和微服务组件约束 |
 | `go-development-playbook` | Go 后端开发规范 | 规范 Go API、服务、微服务和基础设施工具开发 | handler / service / repository 分层清晰；统一错误、日志、超时、测试和依赖边界 |
 | `python-development-playbook` | Python 后端开发规范 | 规范 Python API、worker、自动化工具和服务开发 | router / service / repository 分层清晰；统一校验、异常、测试、依赖和配置方式 |
+| `php-development-playbook` | PHP 后端开发规范 | 规范 PHP API、后台系统、异步任务和业务服务开发 | 先问框架类型；统一 Controller / Service / Repository 边界、异常、缓存、队列和安全策略 |
 
 ### Data And Operations
 
@@ -81,6 +83,7 @@
 | 做 Java 单体或微服务后端 | `java-development-playbook` |
 | 做 Go API、服务或内部工具 | `go-development-playbook` |
 | 做 Python API、worker 或自动化服务 | `python-development-playbook` |
+| 做 PHP API、后台系统或异步任务 | `php-development-playbook` |
 | 做 SQL、索引、迁移、生产数据修复 | `dba-playbook` |
 | 做发布、监控、回滚、集群与环境配置 | `devops-playbook` |
 
@@ -179,7 +182,7 @@
 - 商用后台 UI 设计规范
 - 前端工程规范
 - iOS / Android / Flutter 开发规范
-- Java / Go / Python 后端规范
+- Java / Go / Python / PHP 后端规范
 - DBA 规范
 - 运维 / DevOps 规范
 
