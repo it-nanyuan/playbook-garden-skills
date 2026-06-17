@@ -49,6 +49,7 @@
 | `ios-development-playbook` | iOS 开发规范 | 规范 Swift / SwiftUI / UIKit 项目开发 | 单文件单主类型；扩展拆分；注释、复用、组件化、模块化，并内嵌精简版 UI 基线 |
 | `android-development-playbook` | Android 开发规范 | 规范 Kotlin / Compose / Android 工程开发 | 单文件单主类型；UI / Domain / Data 分层；组件化与状态边界清晰，并内嵌精简版 UI 基线 |
 | `flutter-hybrid-development-playbook` | Flutter 混合开发规范 | 规范中大型 Flutter 和混合应用开发 | 强调功能拆分、组件化、package 化、桥接边界和 `melos` 管理，并内嵌精简版 UI 基线 |
+| `react-native-development-playbook` | React Native 开发规范 | 规范 React Native 页面、导航、状态管理、原生桥接和共享模块开发 | 先问 `Expo / 裸 RN / 混合架构`；强调 screen 拆分、hook 化、状态边界、bridge 边界和商用品质 |
 | `go-development-playbook` | Go 开发规范 | 规范 Go API、服务、任务和基础设施工具开发 | 强调 package 边界、错误处理、context 传递、日志、测试和生产可观测性 |
 | `python-development-playbook` | Python 开发规范 | 规范 Python API、worker、脚本服务和工具开发 | 强调模块职责、依赖管理、类型意识、测试、配置边界和可维护性 |
 | `php-development-playbook` | PHP 开发规范 | 规范 PHP API、后台系统、任务和业务模块开发 | 先问 `Laravel / Symfony / Hyperf / ThinkPHP`；强调分层、注释、测试、缓存队列和安全边界 |
@@ -90,6 +91,7 @@
 | 做 iOS 页面或功能开发 | `ios-development-playbook` |
 | 做 Android 页面或功能开发 | `android-development-playbook` |
 | 做 Flutter / 混合应用开发 | `flutter-hybrid-development-playbook` |
+| 做 React Native 页面、导航、状态或混合模块开发 | `react-native-development-playbook` |
 | 做 Java 单体或微服务后端 | `java-development-playbook` |
 | 做 Go API、服务或内部工具 | `go-development-playbook` |
 | 做 Python API、worker 或自动化服务 | `python-development-playbook` |
@@ -196,7 +198,7 @@
 - 跨语言注释规范
 - 商用后台 UI 设计规范
 - 前端工程规范
-- iOS / Android / Flutter 开发规范
+- iOS / Android / Flutter / React Native 开发规范
 - Java / Go / Python / PHP / C# / Node.js / Rust / C++ / Ruby 后端与系统开发规范
 - DBA 规范
 - 运维 / DevOps 规范

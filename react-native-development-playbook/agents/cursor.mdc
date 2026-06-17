@@ -1,0 +1,12 @@
+---
+description: React Native engineering rules for maintainable screens, navigation, shared modules, and hybrid mobile features.
+globs:
+  - "**/*.tsx"
+  - "**/*.ts"
+alwaysApply: false
+---
+
+- Use this rule when working on React Native application code.
+- Clarify Expo vs bare RN vs hybrid architecture first.
+- Keep `screen`, `components`, `hooks`, `store`, `service`, and `bridge` responsibilities separate.
+- Do not place complete business orchestration, API calls, and navigation logic inside a single screen file.

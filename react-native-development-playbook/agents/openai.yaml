@@ -1,0 +1,4 @@
+interface:
+  display_name: "React Native Development Playbook"
+  short_description: "React Native 开发规范，强调模块边界、注释、复用、导航、状态管理与商用品质。"
+  default_prompt: "Use this skill when planning or implementing React Native applications, hybrid mobile modules, shared business features, or mobile UI flows that need clear architecture, comments, reusable components, navigation rules, state boundaries, and production-oriented engineering standards."
