@@ -52,6 +52,10 @@
 | `go-development-playbook` | Go 开发规范 | 规范 Go API、服务、任务和基础设施工具开发 | 强调 package 边界、错误处理、context 传递、日志、测试和生产可观测性 |
 | `python-development-playbook` | Python 开发规范 | 规范 Python API、worker、脚本服务和工具开发 | 强调模块职责、依赖管理、类型意识、测试、配置边界和可维护性 |
 | `php-development-playbook` | PHP 开发规范 | 规范 PHP API、后台系统、任务和业务模块开发 | 先问 `Laravel / Symfony / Hyperf / ThinkPHP`；强调分层、注释、测试、缓存队列和安全边界 |
+| `csharp-development-playbook` | C# / .NET 开发规范 | 规范 ASP.NET Core、Worker、企业后台和类库开发 | 先问单体 / 微服务 / Worker / 类库；统一分层、异常、日志、缓存消息和部署约束 |
+| `nodejs-backend-playbook` | Node.js 后端开发规范 | 规范 Node.js / TypeScript API、BFF、Worker 和脚本服务开发 | 先问 `NestJS / Express / Fastify` 与运行时形态；统一异步边界、依赖管理、任务和安全策略 |
+| `rust-development-playbook` | Rust 开发规范 | 规范 Rust API、异步服务、CLI、Worker 和库开发 | 先问工程形态、运行时和 crate 结构；强调错误建模、异步边界、性能意识和测试 |
+| `cpp-development-playbook` | C++ 开发规范 | 规范 C++ 类库、SDK、系统工具和高性能模块开发 | 先问构建系统、异常策略、资源管理和线程模型；强调 RAII、生命周期、并发和测试 |
 
 ### Backend
 
@@ -61,6 +65,10 @@
 | `go-development-playbook` | Go 后端开发规范 | 规范 Go API、服务、微服务和基础设施工具开发 | handler / service / repository 分层清晰；统一错误、日志、超时、测试和依赖边界 |
 | `python-development-playbook` | Python 后端开发规范 | 规范 Python API、worker、自动化工具和服务开发 | router / service / repository 分层清晰；统一校验、异常、测试、依赖和配置方式 |
 | `php-development-playbook` | PHP 后端开发规范 | 规范 PHP API、后台系统、异步任务和业务服务开发 | 先问框架类型；统一 Controller / Service / Repository 边界、异常、缓存、队列和安全策略 |
+| `csharp-development-playbook` | C# / .NET 后端开发规范 | 规范 ASP.NET Core API、Worker、企业系统模块和类库开发 | 先问单体 / 微服务 / Worker / 类库；统一 Api / Application / Domain / Infrastructure 边界 |
+| `nodejs-backend-playbook` | Node.js / TypeScript 后端规范 | 规范 Node.js API、BFF、Worker、定时任务和脚本服务开发 | 先问框架与运行时形态；统一 controller / service / repository / jobs 边界 |
+| `rust-development-playbook` | Rust 后端与系统开发规范 | 规范 Rust API、异步服务、CLI、Worker 和库开发 | 先问 API / CLI / Worker / 库；统一 crate 边界、错误建模、异步和性能规范 |
+| `cpp-development-playbook` | C++ 工程开发规范 | 规范 C++ 类库、SDK、系统工具、桌面模块和高性能组件开发 | 先问构建系统、异常策略和线程模型；统一资源管理、生命周期和并发规范 |
 
 ### Data And Operations
 
@@ -84,6 +92,10 @@
 | 做 Go API、服务或内部工具 | `go-development-playbook` |
 | 做 Python API、worker 或自动化服务 | `python-development-playbook` |
 | 做 PHP API、后台系统或异步任务 | `php-development-playbook` |
+| 做 C# / .NET API、Worker 或企业后台 | `csharp-development-playbook` |
+| 做 Node.js / TypeScript 后端、BFF 或 Worker | `nodejs-backend-playbook` |
+| 做 Rust 服务、CLI、Worker 或高性能工具 | `rust-development-playbook` |
+| 做 C++ 类库、SDK、系统工具或高性能组件 | `cpp-development-playbook` |
 | 做 SQL、索引、迁移、生产数据修复 | `dba-playbook` |
 | 做发布、监控、回滚、集群与环境配置 | `devops-playbook` |
 
@@ -182,7 +194,7 @@
 - 商用后台 UI 设计规范
 - 前端工程规范
 - iOS / Android / Flutter 开发规范
-- Java / Go / Python / PHP 后端规范
+- Java / Go / Python / PHP / C# / Node.js / Rust / C++ 后端与系统开发规范
 - DBA 规范
 - 运维 / DevOps 规范
 
