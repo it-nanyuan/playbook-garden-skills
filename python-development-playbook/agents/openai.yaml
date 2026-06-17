@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Development Playbook"
+  short_description: "Build maintainable Python services with clear standards"
+  default_prompt: "Use $python-development-playbook to plan or implement Python services with clear module structure, comments, testing, dependency discipline, and maintainable engineering standards."

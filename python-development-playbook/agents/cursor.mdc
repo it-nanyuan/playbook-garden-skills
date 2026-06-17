@@ -1,0 +1,14 @@
+---
+description: Python backend engineering rules for maintainable services
+globs:
+alwaysApply: false
+---
+
+# Python Development Playbook
+
+When implementing Python work:
+
+- Keep module boundaries clear.
+- Separate API, business, and data access logic.
+- Comment shared modules and complex behavior.
+- Preserve testing and dependency discipline.
