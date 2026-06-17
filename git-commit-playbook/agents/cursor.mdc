@@ -10,6 +10,8 @@ When asked to draft a Git commit message:
 
 - Inspect the real repository changes first.
 - Check `git status`, staged diff, and unstaged diff when available.
+- Reuse the confirmed commit message language when available.
+- If the language is unclear, ask once whether the message should be written in Chinese or English.
 - Suggest splitting the work if unrelated changes are bundled together.
 - If the user says not to commit yet, only draft the message.
 
@@ -43,5 +45,6 @@ The title must use one of:
 
 - The summary line must clearly state what changed.
 - The numbered list must describe concrete changes, not generic phrases.
+- Keep the title and numbered list in the selected language.
 - If `.gitignore` was added or updated, call that out explicitly.
 - Prefer 2 to 6 numbered items unless the diff is smaller.
