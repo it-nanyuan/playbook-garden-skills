@@ -1,0 +1,14 @@
+---
+description: C# and .NET backend engineering rules for maintainable services, APIs, workers, and enterprise modules.
+globs:
+  - "**/*.cs"
+alwaysApply: false
+---
+
+- Use this rule when working on C# or .NET backend code.
+- First clarify project shape: monolith, microservice, worker, or library.
+- Clarify whether the project uses ASP.NET Core MVC, Minimal API, gRPC, or Worker Service.
+- Keep `Api`, `Application`, `Domain`, and `Infrastructure` responsibilities separate.
+- Do not put complete business workflows in controllers.
+- Keep logging, validation, exceptions, cache, messaging, and security strategies unified.
+- Prefer meaningful comments for class responsibility, side effects, and business intent.

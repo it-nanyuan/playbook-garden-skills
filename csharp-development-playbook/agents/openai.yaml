@@ -1,0 +1,4 @@
+interface:
+  display_name: "C# Development Playbook"
+  short_description: "C# 与 .NET 开发规范，强调分层、注释、测试与工程可维护性。"
+  default_prompt: "Use this skill when planning or implementing C# and .NET backend services, APIs, enterprise systems, jobs, or business modules that need clear architecture, comments, testing, dependency boundaries, and production-oriented engineering standards."
