@@ -1,0 +1,4 @@
+interface:
+  display_name: "DBA Playbook"
+  short_description: "Manage databases with safe operational standards"
+  default_prompt: "Use $dba-playbook to plan or execute database work with strong review, backup, rollback, indexing, and production safety standards."

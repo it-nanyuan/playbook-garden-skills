@@ -1,0 +1,14 @@
+---
+description: DBA safety rules for schema, SQL, and production data work
+globs:
+alwaysApply: false
+---
+
+# DBA Playbook
+
+When doing database work:
+
+- Confirm environment first.
+- Review impact, `EXPLAIN`, backup, and rollback.
+- Batch large changes.
+- Keep table, field, and SQL comments clear.
