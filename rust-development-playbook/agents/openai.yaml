@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rust Development Playbook"
+  short_description: "Rust 开发规范，强调模块边界、错误处理、测试与性能意识。"
+  default_prompt: "Use this skill when planning or implementing Rust services, CLIs, system tools, async applications, or performance-sensitive modules that need clear architecture, comments, testing, error handling, and maintainable engineering standards."

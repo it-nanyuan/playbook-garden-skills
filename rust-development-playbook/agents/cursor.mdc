@@ -1,0 +1,10 @@
+---
+description: Rust engineering rules for maintainable services, libraries, CLIs, and performance-sensitive modules.
+globs:
+  - "**/*.rs"
+alwaysApply: false
+---
+
+- Clarify project shape, async runtime, and crate layout first.
+- Keep handlers thin and business orchestration outside transport layer.
+- Model errors explicitly and document non-obvious ownership, concurrency, or unsafe constraints.
