@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Development Playbook"
+  short_description: "Build professional web apps with clear frontend standards"
+  default_prompt: "Use $frontend-development-playbook to clarify product type, UI constraints, stack, comments, and component strategy before building a frontend page or app."

@@ -1,0 +1,14 @@
+---
+description: Frontend engineering and admin UI implementation rules
+globs:
+alwaysApply: false
+---
+
+# Frontend Development Playbook
+
+When implementing frontend work:
+
+- Clarify product type and stack first.
+- Keep strong comments, structure, reuse, and modularity.
+- Avoid oversized page files and repeated logic.
+- When pages involve admin UI, follow the repository's admin UI quality standards too.
