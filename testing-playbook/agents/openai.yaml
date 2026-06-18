@@ -1,0 +1,4 @@
+interface:
+  display_name: "Testing Playbook"
+  short_description: "测试规范，负责测试拆解、用例设计、验收验证、回归与缺陷闭环。"
+  default_prompt: "Use this skill when planning or executing testing work, including test case design, regression strategy, acceptance verification, bug reproduction, risk analysis, and delivery validation across frontend, mobile, backend, data, and release workflows."

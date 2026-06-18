@@ -1,0 +1,8 @@
+---
+description: Testing rules for scope breakdown, case design, regression, acceptance, and release-risk validation.
+alwaysApply: false
+---
+
+- Clarify test target, test goal, and acceptance basis first.
+- Default to Chinese for test notes, defects, and release conclusions unless explicitly changed.
+- Output concrete test scope, defects, risks, and release recommendation.
