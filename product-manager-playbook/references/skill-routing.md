@@ -1,5 +1,10 @@
 # Skill Routing
 
+## Research And Validation
+
+- 市场调研、竞品分析、用户问题提炼、产品沟通：`market-research-playbook`
+- 测试拆解、回归验证、缺陷闭环、提测验收：`testing-playbook`
+
 ## Design
 
 - 后台、控制台、工作台、数据后台：`admin-ui-design-playbook`
