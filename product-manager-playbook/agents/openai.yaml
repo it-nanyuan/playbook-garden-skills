@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Manager Playbook"
+  short_description: "产品经理协同规范，负责拆解需求、提问澄清并调度设计、开发、测试与交付 skill。"
+  default_prompt: "Use this skill when acting as a product manager to clarify requirements, define scope, split work, coordinate design and engineering skills, and drive a feature from idea to implementation with clear acceptance criteria and delivery sequencing."

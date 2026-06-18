@@ -42,6 +42,7 @@
 | --- | --- | --- | --- |
 | `git-commit-playbook` | Git 提交规范 | 统一提交标题、前缀、正文和语言确认流程 | 标题强制 `type: summary`；正文必须编号列出改动；语言不明确时先确认中文或英文 |
 | `comment-style-playbook` | 跨语言注释规范 | 统一类、方法、字段、模块和复杂逻辑的注释写法 | 关键公共能力必须写职责；复杂流程必须写意图；注释强调边界、副作用和约束 |
+| `product-manager-playbook` | 产品经理调度规范 | 负责需求澄清、范围拆解、验收定义和 skill 路由 | 先问业务目标、用户、范围和阶段；默认按顺序协调设计、开发、数据、运维与交付 skill |
 
 ### Design
 
@@ -94,6 +95,7 @@
 | --- | --- |
 | 写规范化 commit message | `git-commit-playbook` |
 | 统一跨语言注释风格 | `comment-style-playbook` |
+| 先拆需求、定范围、分阶段并决定调用哪些 skill | `product-manager-playbook` |
 | 设计后台、工作台、控制台 UI | `admin-ui-design-playbook` |
 | 做 React / Vue 页面或中后台前端 | `frontend-development-playbook` |
 | 做 iOS 页面或功能开发 | `ios-development-playbook` |
@@ -205,6 +207,7 @@
 
 - Git 提交规范
 - 跨语言注释规范
+- 产品经理调度规范
 - 商用后台 UI 设计规范
 - 前端工程规范
 - iOS / Android / Flutter / React Native 开发规范

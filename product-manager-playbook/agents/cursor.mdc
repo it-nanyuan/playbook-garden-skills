@@ -1,0 +1,9 @@
+---
+description: Product manager orchestration rules for clarifying scope, splitting work, and routing tasks across the skill repository.
+alwaysApply: false
+---
+
+- Use this rule when a request needs requirement clarification, task breakdown, acceptance criteria, or cross-skill coordination.
+- Clarify business goal, target user, scope, non-goals, and delivery phase first.
+- Route design, frontend, mobile, backend, DBA, DevOps, comment, and commit work to the matching skill.
+- Default to Chinese for requirement notes, acceptance criteria, comments guidance, and commit guidance unless explicitly changed.
