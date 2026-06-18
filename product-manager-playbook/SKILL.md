@@ -18,6 +18,7 @@ description: Act as a product manager and orchestration layer for the skill repo
 3. 按任务类型路由到合适的设计、开发、数据、运维和交付 skill。
 4. 在多 skill 协同时，决定先后顺序、依赖关系和交付拆分方式。
 5. 在执行过程中持续校验：当前产出是否真的解决业务问题，而不是只是“做完了代码”。
+6. 在临近交付和交付后，负责组织验收、沉淀总结、输出汇报。
 
 ## Default Working Language
 
@@ -80,11 +81,31 @@ description: Act as a product manager and orchestration layer for the skill repo
 
 详细见 `references/acceptance.md`。
 
+## Acceptance Ownership
+
+产品经理不是把“验收”丢给别人就结束，而是要负责：
+
+- 确认验收标准是否完整、可执行
+- 判断是否需要调用 `testing-playbook` 做测试拆解和回归验证
+- 组织业务验收、产品验收和跨角色确认
+- 确认是否达到了“可上线”“可提测”“可继续下一阶段”的标准
+
+执行原则：
+
+- 产品经理负责验收口径和结果判断
+- 测试 skill 负责测试设计、验证执行、缺陷闭环与风险提示
+- 如果没有测试角色，也不能跳过验收标准本身
+
+详细见 `references/acceptance.md`。
+
 ## Skill Routing
 
 这个 skill 负责判断该调用谁，而不是自己替代所有领域规范。
 
 常见路由：
+
+- 市场调研、竞品分析、产品沟通、用户问题提炼：`market-research-playbook`
+- 测试拆解、回归验证、缺陷闭环、提测验收：`testing-playbook`
 
 - 设计后台、控制台、工作台、管理系统：`admin-ui-design-playbook`
 - 业务前端、中后台前端、React / Vue 页面：`frontend-development-playbook`
@@ -117,14 +138,15 @@ description: Act as a product manager and orchestration layer for the skill repo
 3. 再拆前端、移动端、后端、数据、运维任务
 4. 实现阶段同步受注释规范约束
 5. 临近交付时受提交规范约束
+6. 上线前后做验收结论、总结沉淀和汇报输出
 
 典型顺序示例：
 
 - 后台新功能：
-  `product-manager-playbook` → `admin-ui-design-playbook` → `frontend-development-playbook` → `java-development-playbook` → `dba-playbook` → `devops-playbook` → `git-commit-playbook`
+  `product-manager-playbook` → `market-research-playbook`（如需）→ `admin-ui-design-playbook` → `frontend-development-playbook` → `java-development-playbook` → `dba-playbook` → `testing-playbook` → `devops-playbook` → `git-commit-playbook`
 
 - App 功能：
-  `product-manager-playbook` → `admin-ui-design-playbook` → `ios-development-playbook` / `android-development-playbook` / `react-native-development-playbook` / `flutter-hybrid-development-playbook` → `go-development-playbook` / `java-development-playbook` 等后端 skill → `git-commit-playbook`
+  `product-manager-playbook` → `market-research-playbook`（如需）→ `admin-ui-design-playbook` → `ios-development-playbook` / `android-development-playbook` / `react-native-development-playbook` / `flutter-hybrid-development-playbook` → `go-development-playbook` / `java-development-playbook` 等后端 skill → `testing-playbook` → `git-commit-playbook`
 
 - 规范建设：
   `product-manager-playbook` → 对应技术 skill → `comment-style-playbook` / `git-commit-playbook`
@@ -143,6 +165,8 @@ description: Act as a product manager and orchestration layer for the skill repo
 6. 涉及 skill
 7. 验收标准
 8. 风险与待确认项
+9. 上线前验收结论
+10. 汇报摘要或阶段总结
 
 如果用户只是简单问一句“接下来怎么做”，也尽量在脑中按这套结构判断，而不是直接跳实现。
 
@@ -152,6 +176,22 @@ description: Act as a product manager and orchestration layer for the skill repo
 - 如果某个实现方案很复杂但业务价值不高，要主动提示性价比问题
 - 如果某个需求看似简单但其实涉及多个系统边界，要主动拆阶段
 - 如果当前任务更像规范建设或仓库治理，也按项目管理方式拆分，不直接散写建议
+- 需求推进结束后，要能输出阶段总结、风险复盘和对内汇报摘要
+
+## Summary And Reporting
+
+产品经理默认负责把执行结果讲清楚，而不是只停留在“需求已完成”。
+
+常见输出：
+
+- 版本或阶段目标总结
+- 本次完成项与未完成项
+- 验收结论
+- 遗留风险
+- 下一步建议
+- 面向老板、面向团队、面向研发的不同汇报口径
+
+详细见 `references/summary-and-reporting.md`。
 
 ## When To Use
 
@@ -160,6 +200,7 @@ description: Act as a product manager and orchestration layer for the skill repo
 - 用户要决定先调用哪个 skill、后调用哪个 skill
 - 用户要协调设计、前端、移动端、后端、数据、运维和交付多个规范
 - 用户要有人专门“指挥这些 skill”而不是让它们各自乱跑
+- 用户要有人负责验收、阶段总结和汇报输出
 
 ## References
 
@@ -168,6 +209,7 @@ description: Act as a product manager and orchestration layer for the skill repo
 - `references/acceptance.md`
 - `references/skill-routing.md`
 - `references/orchestration-order.md`
+- `references/summary-and-reporting.md`
 
 ## Platform Adapters
 
