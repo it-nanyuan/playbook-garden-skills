@@ -1,0 +1,4 @@
+interface:
+  display_name: "Market Research Playbook"
+  short_description: "市场调研与产品沟通规范，负责竞品分析、用户问题提炼、方案对齐与汇报。"
+  default_prompt: "Use this skill when conducting market research, competitor analysis, user problem discovery, product communication, requirement alignment, strategy comparison, or decision support before product planning and execution."
