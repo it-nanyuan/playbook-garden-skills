@@ -60,6 +60,8 @@ description: Build maintainable Android applications with clear engineering stan
 - 先判断页面属于业务执行页、管理页、工作台还是数据密集型页面
 - 如果风格、竞品、目标用户或高频任务不明确，先补关键问题再设计
 - 避免大标题、过多说明文字、无意义卡片和没有信息层级的页面
+- App 页面默认强制禁止“大标题 + 小标题 + 功能描述”这类展示板式写法
+- 除非用户明确要求活动页、专题页、引导页，否则不要在页面里写功能介绍文案
 - 页面重点应落在任务流、状态、操作效率和内容组织上，而不是视觉热闹
 - 后台或工作台型页面默认追求专业、克制、可信、可商用
 - 用布局、分组、列表、状态标签和操作区表达复杂度，不靠文字堆砌
@@ -73,6 +75,7 @@ description: Build maintainable Android applications with clear engineering stan
 - 不只关注功能和代码结构，也要关注页面是否专业、克制、可商用
 - 如果风格和竞品不明确，先沿用 UI 设计 skill 的提问规则
 - 涉及管理台、工作台、业务后台型页面时，避免大标题、无意义卡片和过多说明文字
+- 涉及 App 页面设计时，默认只输出真实页面本身，不输出功能介绍板、概念展示板或说明型标题区
 - 本 skill 负责 Android 工程实现与模块边界，设计判断由 `admin-ui-design-playbook` 提供
 
 ## Recommended Stack
