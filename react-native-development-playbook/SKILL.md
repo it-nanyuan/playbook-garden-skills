@@ -96,6 +96,8 @@ description: Build maintainable React Native applications with modular engineeri
 - 先判断页面属于业务前台、工具页、工作台、表单流还是数据密集型页面
 - 如果风格、竞品、用户和核心任务不明确，先补关键上下文再设计
 - 避免大标题、大段说明文字、卡片墙和没有结构的页面输出
+- App 页面默认强制禁止“大标题 + 小标题 + 功能描述”这类展示板式写法
+- 除非用户明确要求活动页、专题页、引导页，否则不要在页面里写功能介绍文案
 - 页面重点应放在信息组织、组件层级、状态反馈和操作效率上
 - 对后台、工作台和数据密集型页面，默认采用专业、克制、真实业务系统风格
 - 通过共享组件、分组和布局表达层次，不靠装饰性和文字堆砌
@@ -111,6 +113,7 @@ description: Build maintainable React Native applications with modular engineeri
 - 不要只做功能拆分，也要保证页面呈现符合商用品质标准
 - 如果用户没说明风格、竞品或信息密度，先按 UI 设计 skill 的方式提问
 - 对后台、工作台、数据密集型页面，默认避免大标题、卡片墙和说明文字堆砌
+- 涉及 App 页面设计时，默认只输出真实页面本身，不输出功能介绍板、概念展示板或说明型标题区
 - 本 skill 负责 React Native 的工程拆分、导航、状态和 bridge 边界，设计规则由 `admin-ui-design-playbook` 补足
 
 ## Recommended Stack
