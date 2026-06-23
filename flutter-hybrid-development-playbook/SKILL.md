@@ -26,6 +26,7 @@ description: Build maintainable Flutter-based hybrid applications with modular e
 - 优先做功能复用、组件化和模块化，不接受大量复制页面改名字
 - 中大型项目优先 package 化和 workspace 化管理
 - 混合开发项目中的 Flutter 与原生桥接边界要清楚，不要随意跨层互相侵入
+- 新建 Dart 文件、注释、模板和说明文本中，默认禁止写 `Codex`、平台名或“AI 生成 / created by ...”这类来源信息
 
 ## Comments Standard
 

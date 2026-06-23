@@ -26,6 +26,7 @@ description: Build professional, maintainable frontend applications with clear d
 - 优先复用组件和业务容器，不要复制页面改样式改字段
 - 后台系统优先保证信息架构、交互秩序和数据操作效率
 - 设计和实现都避免大标题、大段说明、无意义卡片堆砌
+- 新建代码文件、样式文件、README 片段、模板和注释中，默认禁止写 `Codex` 或其他平台来源信息
 
 ## Comments Standard
 

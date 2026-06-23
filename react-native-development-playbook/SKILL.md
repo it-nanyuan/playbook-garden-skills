@@ -44,6 +44,7 @@ description: Build maintainable React Native applications with modular engineeri
 - 优先做组件化、模块化和 hook 化，不接受大量复制页面改名字
 - 导航结构、状态容器、网络层、埋点、权限、存储和桥接能力要有清晰边界
 - 混合项目中的 RN 与原生桥接边界要清楚，不要随意跨层互相侵入
+- 新建 TS / JS / 原生桥接文件、注释、模板和说明文本中，默认禁止写 `Codex`、平台名或“AI 生成 / created by ...”这类来源信息
 
 ## Comments Standard
 

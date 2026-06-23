@@ -25,6 +25,7 @@ description: Build maintainable Android applications with clear engineering stan
 - 页面状态、事件处理、数据请求、持久化职责要拆清
 - 优先用组件化和模块化解决重复开发
 - 注释要解释业务含义、状态、副作用和边界，而不是重复代码表面意思
+- 新建 Kotlin / Java 文件、注释、模板和说明文本中，默认禁止写 `Codex`、平台名或“AI 生成 / created by ...”这类来源信息
 
 ## Comments Standard
 

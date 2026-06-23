@@ -26,6 +26,7 @@ description: Build maintainable iOS applications with clear engineering standard
 - 先考虑复用，再考虑局部临时写法
 - 优先做组件化和模块化，而不是把所有页面都写成孤岛
 - 注释是为了帮助协作和维护，不是为了把显而易见的代码再写一遍
+- 新建 Swift 文件、注释、模板和说明文本中，默认禁止写 `Codex`、平台名或“AI 生成 / created by ...”这类来源信息
 
 ## Comments Standard
 
