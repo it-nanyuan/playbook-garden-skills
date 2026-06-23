@@ -1,4 +1,4 @@
 interface:
   display_name: "Git Commit Playbook"
   short_description: "Write clear, structured Git commit messages"
-  default_prompt: "Use $git-commit-playbook to inspect the current diff, default to Chinese unless the user or repository already requires another language, and draft a commit message with a required type prefix plus a numbered change list. When showing a git commit command, never output literal \\n in the message body; use real multiline content or multiple -m flags instead."
+  default_prompt: "Use $git-commit-playbook to inspect the current diff, default to Chinese unless the user or repository already requires another language, and draft a commit message with a required type prefix plus a numbered change list. Keep exactly one blank line between the title and the numbered body, and do not insert blank lines between items 1, 2, 3. When showing or executing a git commit command, never output literal \\n in the message body. For real execution, prefer git commit -F with a generated message file; otherwise use multiple -m flags and self-check that the final body contains no literal \\n."
