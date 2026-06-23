@@ -62,6 +62,8 @@ description: Build maintainable iOS applications with clear engineering standard
 - 先判断当前页面是工具型页面、业务执行页、工作台还是数据密集型页面
 - 如果风格、竞品、用户或核心任务不明确，先补关键上下文，不直接开始堆界面
 - 避免大标题、大段说明文字、卡片墙和没有层级的页面结构
+- App 页面默认强制禁止“大标题 + 小标题 + 功能描述”这类展示板式写法
+- 除非用户明确要求活动页、专题页、引导页，否则不要在页面里写功能介绍文案
 - 让页面重点落在内容结构、状态反馈、主操作、次操作和信息扫描路径上
 - 如果是后台风格或工作台风格页面，优先追求专业、克制、可商用品质，而不是装饰性
 - 用组件、留白和分组表达层级，不靠解释文字补救设计
@@ -75,6 +77,7 @@ description: Build maintainable iOS applications with clear engineering standard
 - 不要只把功能实现出来而忽略页面专业度
 - 如果用户没有明确风格或竞品，先按 UI 设计 skill 的思路补齐上下文
 - 涉及后台风格 App、管理台、工作台、数据型页面时，优先遵守那套克制、专业、避免堆字和卡片墙的标准
+- 涉及 App 页面设计时，默认只输出真实页面本身，不输出功能介绍板、概念展示板或说明型标题区
 - 本 skill 负责 iOS 工程实现、模块边界和复用，UI 设计标准由 `admin-ui-design-playbook` 提供
 
 ## Recommended Stack
