@@ -47,6 +47,14 @@ description: Design professional, commercially credible admin and dashboard inte
 - 用组件和留白组织复杂信息，不靠大段解释文字堆层次
 - 让界面看起来像真实业务系统，而不是 AI 拼出来的卡片墙
 
+如果任务是移动 App 或小程序页面，额外强制遵守下面规则：
+
+- 不要把页面做成“功能介绍板”或“概念展示板”
+- 不要在页面顶部堆大标题、小标题、宣传语、功能卖点说明
+- 不要用成段文字去解释页面功能，页面本身必须能直接表达任务流
+- 除非用户明确要求活动页、专题页、引导页，否则默认按真实产品页面设计
+- 默认只输出页面本身，不追加大背景、说明区、卖点图标、设计注释和展示文案
+
 ## Admin Web Rules
 
 后台网页默认优先考虑 `Vue 3 + TypeScript + Element Plus` 或 `React + TypeScript + Ant Design`。
@@ -79,8 +87,10 @@ description: Design professional, commercially credible admin and dashboard inte
 默认避免这些问题：
 
 - 页面一上来就是超大标题和成段说明文字
+- App 页面顶部出现“页面名称 + 功能说明 + 卖点副标题”这种展示板结构
 - 为了“显得丰富”堆很多卡片，实际没有信息组织
 - 后台页面做成官网 Hero Section 风格
+- 移动端页面依赖大标题、小标题或描述文案告诉用户“这个页面是干什么的”
 - 操作区、筛选区、表格区层级混乱
 - 列表过宽但没有固定关键列或横向滚动策略
 - 顶部导航、标签栏、侧边菜单和内容区一起乱滚
