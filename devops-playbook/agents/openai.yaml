@@ -1,4 +1,4 @@
 interface:
   display_name: "DevOps Playbook"
-  short_description: "Operate services with safe deployment standards"
+  short_description: "运维规范，负责部署发布、环境配置、监控告警、回滚与稳定性保障。"
   default_prompt: "Use $devops-playbook to plan or execute deployment, environment, monitoring, rollback, and operational work with strong safety standards."

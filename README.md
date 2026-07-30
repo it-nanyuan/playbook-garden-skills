@@ -16,6 +16,23 @@
 
 这套 skill 的作用，就是把这些关键环节标准化。
 
+## Machine-readable Catalog
+
+除了人工阅读的 [README.md](README.md)，仓库现在还提供机器可读索引：
+
+- [skills-index.json](skills-index.json)
+- [CHANGELOG.md](CHANGELOG.md)
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+
+当前仓库规范版本：`0.2.0`。
+
+推荐读取顺序：
+
+1. 平台或程序优先读取 `skills-index.json`
+2. 人工总览优先看 `README.md`
+3. 单个 skill 的规范源始终是对应目录下的 `SKILL.md`
+4. `agents/*` 负责平台适配入口，`references/` 负责细则和扩展说明
+
 ## Core Principles
 
 | 原则 | 说明 |
@@ -40,7 +57,7 @@
 
 | Skill | 方向 | 主要用途 | 关键约束 |
 | --- | --- | --- | --- |
-| `git-commit-playbook` | Git 提交规范 | 统一提交标题、前缀、正文和语言确认流程 | 标题强制 `type: summary`；正文必须编号列出改动；语言不明确时先确认中文或英文 |
+| `git-commit-playbook` | Git 提交规范 | 统一提交标题、前缀、正文和语言确认流程 | 标题强制 `type: summary`；正文必须编号列出改动；语言不明确时默认使用中文 |
 | `comment-style-playbook` | 跨语言注释规范 | 统一类、方法、字段、模块和复杂逻辑的注释写法 | 关键公共能力必须写职责；复杂流程必须写意图；注释强调边界、副作用和约束 |
 | `product-manager-playbook` | 产品经理调度规范 | 负责需求澄清、范围拆解、验收定义、总结汇报和 skill 路由 | 先问业务目标、用户、范围和阶段；默认按顺序协调调研、设计、开发、测试、数据、运维与交付 skill |
 | `testing-playbook` | 测试规范 | 负责测试拆解、用例设计、回归验证、缺陷闭环和上线风险判断 | 先问测试对象、目标和验收依据；输出测试范围、缺陷、风险和提测 / 上线结论 |
@@ -61,20 +78,12 @@
 | `android-development-playbook` | Android 开发规范 | 规范 Kotlin / Compose / Android 工程开发 | 单文件单主类型；UI / Domain / Data 分层；组件化与状态边界清晰，并内嵌精简版 UI 基线 |
 | `flutter-hybrid-development-playbook` | Flutter 混合开发规范 | 规范中大型 Flutter 和混合应用开发 | 强调功能拆分、组件化、package 化、桥接边界和 `melos` 管理，并内嵌精简版 UI 基线 |
 | `react-native-development-playbook` | React Native 开发规范 | 规范 React Native 页面、导航、状态管理、原生桥接和共享模块开发 | 先问 `Expo / 裸 RN / 混合架构`；强调 screen 拆分、hook 化、状态边界、bridge 边界和商用品质 |
-| `go-development-playbook` | Go 开发规范 | 规范 Go API、服务、任务和基础设施工具开发 | 强调 package 边界、错误处理、context 传递、日志、测试和生产可观测性 |
-| `python-development-playbook` | Python 开发规范 | 规范 Python API、worker、脚本服务和工具开发 | 强调模块职责、依赖管理、类型意识、测试、配置边界和可维护性 |
-| `php-development-playbook` | PHP 开发规范 | 规范 PHP API、后台系统、任务和业务模块开发 | 先问 `Laravel / Symfony / Hyperf / ThinkPHP`；强调分层、注释、测试、缓存队列和安全边界 |
-| `csharp-development-playbook` | C# / .NET 开发规范 | 规范 ASP.NET Core、Worker、企业后台和类库开发 | 先问单体 / 微服务 / Worker / 类库；统一分层、异常、日志、缓存消息和部署约束 |
-| `nodejs-backend-playbook` | Node.js 后端开发规范 | 规范 Node.js / TypeScript API、BFF、Worker 和脚本服务开发 | 先问 `NestJS / Express / Fastify` 与运行时形态；统一异步边界、依赖管理、任务和安全策略 |
-| `rust-development-playbook` | Rust 开发规范 | 规范 Rust API、异步服务、CLI、Worker 和库开发 | 先问工程形态、运行时和 crate 结构；强调错误建模、异步边界、性能意识和测试 |
-| `cpp-development-playbook` | C++ 开发规范 | 规范 C++ 类库、SDK、系统工具和高性能模块开发 | 先问构建系统、异常策略、资源管理和线程模型；强调 RAII、生命周期、并发和测试 |
-| `ruby-development-playbook` | Ruby 开发规范 | 规范 Ruby、Rails、API、后台任务和业务系统开发 | 先问 `Rails / Sinatra / Grape / Hanami` 与任务体系；强调 ActiveRecord、Job、注释、测试和运行时边界 |
 
 ### Backend
 
 | Skill | 方向 | 主要用途 | 关键约束 |
 | --- | --- | --- | --- |
-| `java-development-playbook` | Java 后端开发规范 | 规范单体与微服务 Java 项目开发 | 先问单体还是微服务；`service` 必须配 `service.impl`；统一接口、事务、异常、日志、缓存、命名和微服务组件约束 |
+| `java-development-playbook` | Java 后端开发规范 | 规范单体与微服务 Java 项目构建和架构重构 | 复用已确认的架构边界；单体默认技术分层；Controller、Service、MyBatis-Plus、Lombok、权限和架构门禁保持一致 |
 | `go-development-playbook` | Go 后端开发规范 | 规范 Go API、服务、微服务和基础设施工具开发 | handler / service / repository 分层清晰；统一错误、日志、超时、测试和依赖边界 |
 | `python-development-playbook` | Python 后端开发规范 | 规范 Python API、worker、自动化工具和服务开发 | router / service / repository 分层清晰；统一校验、异常、测试、依赖和配置方式 |
 | `php-development-playbook` | PHP 后端开发规范 | 规范 PHP API、后台系统、异步任务和业务服务开发 | 先问框架类型；统一 Controller / Service / Repository 边界、异常、缓存、队列和安全策略 |
@@ -133,6 +142,21 @@
 - `SKILL.md` 保持清晰，适合直接触发
 - `references/` 承接细则，避免主文件臃肿
 - `agents/` 方便多平台接入，而不是每次临时拼提示词
+
+## Contributing
+
+新增或修改 skill 时，建议先看：
+
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [skills-index.json](skills-index.json)
+- [CHANGELOG.md](CHANGELOG.md)
+
+特别注意：
+
+- `SKILL.md` 是业务规则源
+- `agents/*` 不能偏离 `SKILL.md`
+- 新建文件和示例默认禁止出现平台来源信息
+- 结构变化应同步更新索引和变更日志
 
 ## Platform Adapters
 
@@ -223,7 +247,6 @@
 
 后续可以继续扩展到：
 
-- 测试规范
 - API 设计规范
 - 安全规范
 - 产品需求文档规范

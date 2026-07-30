@@ -110,6 +110,20 @@ description: Plan and execute structured testing work across products and system
 6. 回归建议
 7. 提测 / 上线结论
 
+## Delivery Template
+
+测试输出默认尽量落到下面这些结构：
+
+1. 测试范围
+2. 场景 / 用例
+3. 预期结果
+4. 实际结果
+5. 缺陷等级与影响范围
+6. 回归建议
+7. 提测或上线结论
+
+测试报告、缺陷描述和验收结论中，不得写入 `Codex`、`OpenAI`、`Claude`、`Gemini`、`Copilot`、`Cursor` 等平台来源信息，也不要出现“由 AI 生成”之类痕迹。
+
 ## When To Use
 
 - 用户要设计测试点、测试用例或回归范围

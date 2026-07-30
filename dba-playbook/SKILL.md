@@ -83,6 +83,24 @@ description: Manage database work with strong safety, review, and maintainabilit
 - `references/schema.md`
 - `references/performance.md`
 - `references/tools.md`
+- `references/change-template.md`
+
+## Output Hygiene
+
+- 数据库评审、变更单、SQL 说明、执行记录和回滚方案中，不得写入 `Codex`、`OpenAI`、`Claude`、`Gemini`、`Copilot`、`Cursor` 等平台来源信息，也不要出现“由 AI 生成”之类痕迹
+- 默认给出可直接执行审阅的数据库交付内容，例如变更目标、影响范围、执行 SQL、回滚 SQL、验证方式，而不是空泛结论
+
+## Delivery Template
+
+数据库变更或评审默认应包含：
+
+1. 变更目标
+2. 环境与窗口
+3. 影响对象与数据范围
+4. 执行 SQL / 迁移步骤
+5. 风险评估
+6. 备份与回滚方案
+7. 验证 SQL 与验收方式
 
 ## Platform Adapters
 

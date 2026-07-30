@@ -13,4 +13,5 @@ This skill provides platform-facing Java backend engineering instructions.
 ## Rule
 
 - `SKILL.md` remains the source of Java architecture and engineering rules.
-- Always preserve the monolith-vs-microservices decision as the first step.
+- Preserve an architecture decision already established by the user or repository; ask only when it is unknown.
+- Keep platform adapters aligned on monolith layout, Controller boundaries, MyBatis-Plus, Lombok, security, and verification rules.

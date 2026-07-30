@@ -1,4 +1,4 @@
 interface:
   display_name: "Java Development Playbook"
-  short_description: "Build maintainable Java backends with clear standards"
-  default_prompt: "Use $java-development-playbook to first clarify whether the Java project is monolithic or microservices, then choose the appropriate structure, comments, and middleware stack."
+  short_description: "Java 后端构建与重构规范，覆盖单体分层、MyBatis-Plus、Lombok、权限与架构门禁。"
+  default_prompt: "Use $java-development-playbook to preserve the confirmed monolith or microservice boundary, then implement clean Controller, Service, MyBatis-Plus, Lombok, security, comments, and verification rules."

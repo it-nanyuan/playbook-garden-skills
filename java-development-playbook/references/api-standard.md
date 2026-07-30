@@ -24,6 +24,10 @@
 - 出参用 VO
 - 不直接把 Entity 裸暴露给外部
 - 对象转换统一收敛，不在 Controller 和 Service 到处散写
+- Request、Response、View、DTO、VO 不作为 Controller 的嵌套类或嵌套 record
+- 每个顶层传输类型独立文件，并放入与职责一致的 `dto` 或 `vo`
+- 新建类型前先搜索已有模型；只有字段语义、校验和生命周期一致时才复用
+- Controller 只组装统一返回体，不在方法内编排复杂转换和持久化查询
 
 ## Idempotency
 

@@ -82,6 +82,21 @@ description: Conduct market research and product communication with structured o
 7. 建议结论
 8. 需要继续确认的问题
 
+## Delivery Template
+
+调研输出默认尽量使用下面这类结构：
+
+1. 调研目标
+2. 调研样本或对象
+3. 事实发现
+4. 推断与判断
+5. 机会点与风险点
+6. 方案比较
+7. 建议结论
+8. 后续待确认问题
+
+调研结论、竞品对比、沟通纪要和汇报摘要中，不得写入 `Codex`、`OpenAI`、`Claude`、`Gemini`、`Copilot`、`Cursor` 等平台来源信息，也不要出现“由 AI 生成”之类痕迹。
+
 ## Collaboration With Product Manager
 
 - `market-research-playbook` 提供调研事实、竞品信息、用户问题和方案依据

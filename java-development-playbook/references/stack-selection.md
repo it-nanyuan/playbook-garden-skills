@@ -9,6 +9,8 @@
 - `MySQL`
 - `Redis`
 
+默认只选择一套主持久化方案。项目确认使用 `MyBatis-Plus` 后，不同时引入 JPA Repository、JPA Entity 注解或第二套查询模型。
+
 ## Monolith Recommendation
 
 - `Spring Boot`
@@ -66,3 +68,5 @@
 - 根据项目目标选择，不为“完整”而全加
 - 先判断业务场景，再决定要不要 MQ、ES、搜索、同步任务
 - 先确认单体还是微服务，再决定是否引入治理类组件
+- 已有项目的框架迁移以用户确认的目标栈为准，迁移后删除旧框架旁路并增加残留检查
+- MyBatis-Plus 的基础 CRUD 使用 Mapper，复杂 SQL 使用 `mapper.xml`，不把 SQL 散落到 Java 业务代码

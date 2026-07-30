@@ -50,3 +50,6 @@ env/
 *.temp
 *.bak
 *.zip
+
+# Repository catalog
+!skills-index.json

@@ -1,0 +1,451 @@
+{
+  "schema_version": "1.0.0",
+  "repo_name": "playbook-garden-skills",
+  "repo_version": "0.2.0",
+  "default_language": "zh-CN",
+  "skill_count": 22,
+  "changelog_path": "CHANGELOG.md",
+  "generated_at": "2026-07-30",
+  "skills": [
+    {
+      "name": "Git Commit Playbook",
+      "slug": "git-commit-playbook",
+      "path": "git-commit-playbook",
+      "category": "collaboration",
+      "default_language": "zh-CN",
+      "description": "统一 Git 提交标题、正文、语言和执行方式。",
+      "recommended_with": ["comment-style-playbook"],
+      "entrypoints": {
+        "skill": "git-commit-playbook/SKILL.md",
+        "agents": {
+          "openai": "git-commit-playbook/agents/openai.yaml",
+          "claude": "git-commit-playbook/agents/claude.md",
+          "copilot": "git-commit-playbook/agents/copilot-instructions.md",
+          "cursor": "git-commit-playbook/agents/cursor.mdc",
+          "gemini": "git-commit-playbook/agents/gemini.md"
+        },
+        "platforms": "git-commit-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Comment Style Playbook",
+      "slug": "comment-style-playbook",
+      "path": "comment-style-playbook",
+      "category": "collaboration",
+      "default_language": "zh-CN",
+      "description": "统一跨语言注释规范与输出净化规则。",
+      "recommended_with": ["frontend-development-playbook", "java-development-playbook"],
+      "entrypoints": {
+        "skill": "comment-style-playbook/SKILL.md",
+        "agents": {
+          "openai": "comment-style-playbook/agents/openai.yaml",
+          "claude": "comment-style-playbook/agents/claude.md",
+          "copilot": "comment-style-playbook/agents/copilot-instructions.md",
+          "cursor": "comment-style-playbook/agents/cursor.mdc",
+          "gemini": "comment-style-playbook/agents/gemini.md"
+        },
+        "platforms": "comment-style-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Product Manager Playbook",
+      "slug": "product-manager-playbook",
+      "path": "product-manager-playbook",
+      "category": "collaboration",
+      "default_language": "zh-CN",
+      "description": "负责需求澄清、范围拆解、路由 skill、验收与汇报。",
+      "recommended_with": ["market-research-playbook", "testing-playbook"],
+      "entrypoints": {
+        "skill": "product-manager-playbook/SKILL.md",
+        "agents": {
+          "openai": "product-manager-playbook/agents/openai.yaml",
+          "claude": "product-manager-playbook/agents/claude.md",
+          "copilot": "product-manager-playbook/agents/copilot-instructions.md",
+          "cursor": "product-manager-playbook/agents/cursor.mdc",
+          "gemini": "product-manager-playbook/agents/gemini.md"
+        },
+        "platforms": "product-manager-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Testing Playbook",
+      "slug": "testing-playbook",
+      "path": "testing-playbook",
+      "category": "collaboration",
+      "default_language": "zh-CN",
+      "description": "负责测试拆解、缺陷闭环、回归验证和上线风险判断。",
+      "recommended_with": ["product-manager-playbook"],
+      "entrypoints": {
+        "skill": "testing-playbook/SKILL.md",
+        "agents": {
+          "openai": "testing-playbook/agents/openai.yaml",
+          "claude": "testing-playbook/agents/claude.md",
+          "copilot": "testing-playbook/agents/copilot-instructions.md",
+          "cursor": "testing-playbook/agents/cursor.mdc",
+          "gemini": "testing-playbook/agents/gemini.md"
+        },
+        "platforms": "testing-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Market Research Playbook",
+      "slug": "market-research-playbook",
+      "path": "market-research-playbook",
+      "category": "collaboration",
+      "default_language": "zh-CN",
+      "description": "负责竞品分析、用户问题提炼、方案比较和产品沟通。",
+      "recommended_with": ["product-manager-playbook"],
+      "entrypoints": {
+        "skill": "market-research-playbook/SKILL.md",
+        "agents": {
+          "openai": "market-research-playbook/agents/openai.yaml",
+          "claude": "market-research-playbook/agents/claude.md",
+          "copilot": "market-research-playbook/agents/copilot-instructions.md",
+          "cursor": "market-research-playbook/agents/cursor.mdc",
+          "gemini": "market-research-playbook/agents/gemini.md"
+        },
+        "platforms": "market-research-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Admin UI Design Playbook",
+      "slug": "admin-ui-design-playbook",
+      "path": "admin-ui-design-playbook",
+      "category": "design",
+      "default_language": "zh-CN",
+      "description": "商用后台与专业业务界面设计规范。",
+      "recommended_with": ["frontend-development-playbook", "ios-development-playbook", "android-development-playbook", "flutter-hybrid-development-playbook", "react-native-development-playbook"],
+      "entrypoints": {
+        "skill": "admin-ui-design-playbook/SKILL.md",
+        "agents": {
+          "openai": "admin-ui-design-playbook/agents/openai.yaml",
+          "claude": "admin-ui-design-playbook/agents/claude.md",
+          "copilot": "admin-ui-design-playbook/agents/copilot-instructions.md",
+          "cursor": "admin-ui-design-playbook/agents/cursor.mdc",
+          "gemini": "admin-ui-design-playbook/agents/gemini.md"
+        },
+        "platforms": "admin-ui-design-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Frontend Development Playbook",
+      "slug": "frontend-development-playbook",
+      "path": "frontend-development-playbook",
+      "category": "frontend-mobile",
+      "default_language": "zh-CN",
+      "description": "规范业务前端、中后台前端与 H5 项目的设计和工程实现。",
+      "recommended_with": ["admin-ui-design-playbook", "comment-style-playbook"],
+      "entrypoints": {
+        "skill": "frontend-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "frontend-development-playbook/agents/openai.yaml",
+          "claude": "frontend-development-playbook/agents/claude.md",
+          "copilot": "frontend-development-playbook/agents/copilot-instructions.md",
+          "cursor": "frontend-development-playbook/agents/cursor.mdc",
+          "gemini": "frontend-development-playbook/agents/gemini.md"
+        },
+        "platforms": "frontend-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "iOS Development Playbook",
+      "slug": "ios-development-playbook",
+      "path": "ios-development-playbook",
+      "category": "frontend-mobile",
+      "default_language": "zh-CN",
+      "description": "规范 Swift、SwiftUI、UIKit 项目的工程实现与页面输出。",
+      "recommended_with": ["admin-ui-design-playbook", "comment-style-playbook"],
+      "entrypoints": {
+        "skill": "ios-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "ios-development-playbook/agents/openai.yaml",
+          "claude": "ios-development-playbook/agents/claude.md",
+          "copilot": "ios-development-playbook/agents/copilot-instructions.md",
+          "cursor": "ios-development-playbook/agents/cursor.mdc",
+          "gemini": "ios-development-playbook/agents/gemini.md"
+        },
+        "platforms": "ios-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Android Development Playbook",
+      "slug": "android-development-playbook",
+      "path": "android-development-playbook",
+      "category": "frontend-mobile",
+      "default_language": "zh-CN",
+      "description": "规范 Kotlin、Compose、Android 工程的架构与页面输出。",
+      "recommended_with": ["admin-ui-design-playbook", "comment-style-playbook"],
+      "entrypoints": {
+        "skill": "android-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "android-development-playbook/agents/openai.yaml",
+          "claude": "android-development-playbook/agents/claude.md",
+          "copilot": "android-development-playbook/agents/copilot-instructions.md",
+          "cursor": "android-development-playbook/agents/cursor.mdc",
+          "gemini": "android-development-playbook/agents/gemini.md"
+        },
+        "platforms": "android-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Flutter Hybrid Development Playbook",
+      "slug": "flutter-hybrid-development-playbook",
+      "path": "flutter-hybrid-development-playbook",
+      "category": "frontend-mobile",
+      "default_language": "zh-CN",
+      "description": "规范 Flutter 混合开发、package 边界和 melos 管理。",
+      "recommended_with": ["admin-ui-design-playbook", "comment-style-playbook"],
+      "entrypoints": {
+        "skill": "flutter-hybrid-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "flutter-hybrid-development-playbook/agents/openai.yaml",
+          "claude": "flutter-hybrid-development-playbook/agents/claude.md",
+          "copilot": "flutter-hybrid-development-playbook/agents/copilot-instructions.md",
+          "cursor": "flutter-hybrid-development-playbook/agents/cursor.mdc",
+          "gemini": "flutter-hybrid-development-playbook/agents/gemini.md"
+        },
+        "platforms": "flutter-hybrid-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "React Native Development Playbook",
+      "slug": "react-native-development-playbook",
+      "path": "react-native-development-playbook",
+      "category": "frontend-mobile",
+      "default_language": "zh-CN",
+      "description": "规范 React Native 页面、导航、状态、桥接和混合架构。",
+      "recommended_with": ["admin-ui-design-playbook", "comment-style-playbook"],
+      "entrypoints": {
+        "skill": "react-native-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "react-native-development-playbook/agents/openai.yaml",
+          "claude": "react-native-development-playbook/agents/claude.md",
+          "copilot": "react-native-development-playbook/agents/copilot-instructions.md",
+          "cursor": "react-native-development-playbook/agents/cursor.mdc",
+          "gemini": "react-native-development-playbook/agents/gemini.md"
+        },
+        "platforms": "react-native-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Java Development Playbook",
+      "slug": "java-development-playbook",
+      "path": "java-development-playbook",
+      "category": "backend",
+      "default_language": "zh-CN",
+      "description": "规范 Java 单体与微服务项目的分层、Controller、MyBatis-Plus、Lombok、权限和架构重构。",
+      "recommended_with": ["comment-style-playbook", "dba-playbook", "devops-playbook"],
+      "entrypoints": {
+        "skill": "java-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "java-development-playbook/agents/openai.yaml",
+          "claude": "java-development-playbook/agents/claude.md",
+          "copilot": "java-development-playbook/agents/copilot-instructions.md",
+          "cursor": "java-development-playbook/agents/cursor.mdc",
+          "gemini": "java-development-playbook/agents/gemini.md"
+        },
+        "platforms": "java-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Go Development Playbook",
+      "slug": "go-development-playbook",
+      "path": "go-development-playbook",
+      "category": "backend",
+      "default_language": "zh-CN",
+      "description": "规范 Go API、服务、任务和基础设施工具开发。",
+      "recommended_with": ["comment-style-playbook", "dba-playbook", "devops-playbook"],
+      "entrypoints": {
+        "skill": "go-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "go-development-playbook/agents/openai.yaml",
+          "claude": "go-development-playbook/agents/claude.md",
+          "copilot": "go-development-playbook/agents/copilot-instructions.md",
+          "cursor": "go-development-playbook/agents/cursor.mdc",
+          "gemini": "go-development-playbook/agents/gemini.md"
+        },
+        "platforms": "go-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Python Development Playbook",
+      "slug": "python-development-playbook",
+      "path": "python-development-playbook",
+      "category": "backend",
+      "default_language": "zh-CN",
+      "description": "规范 Python API、worker、自动化工具和服务开发。",
+      "recommended_with": ["comment-style-playbook", "dba-playbook", "devops-playbook"],
+      "entrypoints": {
+        "skill": "python-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "python-development-playbook/agents/openai.yaml",
+          "claude": "python-development-playbook/agents/claude.md",
+          "copilot": "python-development-playbook/agents/copilot-instructions.md",
+          "cursor": "python-development-playbook/agents/cursor.mdc",
+          "gemini": "python-development-playbook/agents/gemini.md"
+        },
+        "platforms": "python-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "PHP Development Playbook",
+      "slug": "php-development-playbook",
+      "path": "php-development-playbook",
+      "category": "backend",
+      "default_language": "zh-CN",
+      "description": "规范 PHP API、后台系统、异步任务和业务服务开发。",
+      "recommended_with": ["comment-style-playbook", "dba-playbook", "devops-playbook"],
+      "entrypoints": {
+        "skill": "php-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "php-development-playbook/agents/openai.yaml",
+          "claude": "php-development-playbook/agents/claude.md",
+          "copilot": "php-development-playbook/agents/copilot-instructions.md",
+          "cursor": "php-development-playbook/agents/cursor.mdc",
+          "gemini": "php-development-playbook/agents/gemini.md"
+        },
+        "platforms": "php-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "CSharp Development Playbook",
+      "slug": "csharp-development-playbook",
+      "path": "csharp-development-playbook",
+      "category": "backend",
+      "default_language": "zh-CN",
+      "description": "规范 ASP.NET Core、Worker、企业系统模块和类库开发。",
+      "recommended_with": ["comment-style-playbook", "dba-playbook", "devops-playbook"],
+      "entrypoints": {
+        "skill": "csharp-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "csharp-development-playbook/agents/openai.yaml",
+          "claude": "csharp-development-playbook/agents/claude.md",
+          "copilot": "csharp-development-playbook/agents/copilot-instructions.md",
+          "cursor": "csharp-development-playbook/agents/cursor.mdc",
+          "gemini": "csharp-development-playbook/agents/gemini.md"
+        },
+        "platforms": "csharp-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Nodejs Backend Playbook",
+      "slug": "nodejs-backend-playbook",
+      "path": "nodejs-backend-playbook",
+      "category": "backend",
+      "default_language": "zh-CN",
+      "description": "规范 Node.js、TypeScript API、BFF、Worker 和脚本服务开发。",
+      "recommended_with": ["comment-style-playbook", "dba-playbook", "devops-playbook"],
+      "entrypoints": {
+        "skill": "nodejs-backend-playbook/SKILL.md",
+        "agents": {
+          "openai": "nodejs-backend-playbook/agents/openai.yaml",
+          "claude": "nodejs-backend-playbook/agents/claude.md",
+          "copilot": "nodejs-backend-playbook/agents/copilot-instructions.md",
+          "cursor": "nodejs-backend-playbook/agents/cursor.mdc",
+          "gemini": "nodejs-backend-playbook/agents/gemini.md"
+        },
+        "platforms": "nodejs-backend-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Rust Development Playbook",
+      "slug": "rust-development-playbook",
+      "path": "rust-development-playbook",
+      "category": "backend",
+      "default_language": "zh-CN",
+      "description": "规范 Rust API、异步服务、CLI、Worker 和库开发。",
+      "recommended_with": ["comment-style-playbook", "devops-playbook"],
+      "entrypoints": {
+        "skill": "rust-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "rust-development-playbook/agents/openai.yaml",
+          "claude": "rust-development-playbook/agents/claude.md",
+          "copilot": "rust-development-playbook/agents/copilot-instructions.md",
+          "cursor": "rust-development-playbook/agents/cursor.mdc",
+          "gemini": "rust-development-playbook/agents/gemini.md"
+        },
+        "platforms": "rust-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Cpp Development Playbook",
+      "slug": "cpp-development-playbook",
+      "path": "cpp-development-playbook",
+      "category": "backend",
+      "default_language": "zh-CN",
+      "description": "规范 C++ 类库、SDK、系统工具和高性能模块开发。",
+      "recommended_with": ["comment-style-playbook", "devops-playbook"],
+      "entrypoints": {
+        "skill": "cpp-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "cpp-development-playbook/agents/openai.yaml",
+          "claude": "cpp-development-playbook/agents/claude.md",
+          "copilot": "cpp-development-playbook/agents/copilot-instructions.md",
+          "cursor": "cpp-development-playbook/agents/cursor.mdc",
+          "gemini": "cpp-development-playbook/agents/gemini.md"
+        },
+        "platforms": "cpp-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Ruby Development Playbook",
+      "slug": "ruby-development-playbook",
+      "path": "ruby-development-playbook",
+      "category": "backend",
+      "default_language": "zh-CN",
+      "description": "规范 Ruby、Rails、后台任务和业务系统开发。",
+      "recommended_with": ["comment-style-playbook", "dba-playbook", "devops-playbook"],
+      "entrypoints": {
+        "skill": "ruby-development-playbook/SKILL.md",
+        "agents": {
+          "openai": "ruby-development-playbook/agents/openai.yaml",
+          "claude": "ruby-development-playbook/agents/claude.md",
+          "copilot": "ruby-development-playbook/agents/copilot-instructions.md",
+          "cursor": "ruby-development-playbook/agents/cursor.mdc",
+          "gemini": "ruby-development-playbook/agents/gemini.md"
+        },
+        "platforms": "ruby-development-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "DBA Playbook",
+      "slug": "dba-playbook",
+      "path": "dba-playbook",
+      "category": "data-ops",
+      "default_language": "zh-CN",
+      "description": "规范数据库设计、SQL 优化、变更、恢复和生产数据操作。",
+      "recommended_with": ["devops-playbook"],
+      "entrypoints": {
+        "skill": "dba-playbook/SKILL.md",
+        "agents": {
+          "openai": "dba-playbook/agents/openai.yaml",
+          "claude": "dba-playbook/agents/claude.md",
+          "copilot": "dba-playbook/agents/copilot-instructions.md",
+          "cursor": "dba-playbook/agents/cursor.mdc",
+          "gemini": "dba-playbook/agents/gemini.md"
+        },
+        "platforms": "dba-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "DevOps Playbook",
+      "slug": "devops-playbook",
+      "path": "devops-playbook",
+      "category": "data-ops",
+      "default_language": "zh-CN",
+      "description": "规范发布、部署、监控、回滚、环境和故障处理流程。",
+      "recommended_with": ["dba-playbook"],
+      "entrypoints": {
+        "skill": "devops-playbook/SKILL.md",
+        "agents": {
+          "openai": "devops-playbook/agents/openai.yaml",
+          "claude": "devops-playbook/agents/claude.md",
+          "copilot": "devops-playbook/agents/copilot-instructions.md",
+          "cursor": "devops-playbook/agents/cursor.mdc",
+          "gemini": "devops-playbook/agents/gemini.md"
+        },
+        "platforms": "devops-playbook/references/platforms/README.md"
+      }
+    }
+  ]
+}

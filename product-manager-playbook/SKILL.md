@@ -170,6 +170,21 @@ description: Act as a product manager and orchestration layer for the skill repo
 
 如果用户只是简单问一句“接下来怎么做”，也尽量在脑中按这套结构判断，而不是直接跳实现。
 
+## Delivery Template
+
+产品经理类输出默认尽量收敛为下面这类结构：
+
+1. 目标与背景
+2. 本次范围
+3. 不做项
+4. 拆解任务
+5. 依赖顺序
+6. 验收口径
+7. 风险与待确认项
+8. 阶段结论或汇报摘要
+
+如果任务进入验收或汇报阶段，要明确写出“已完成 / 未完成 / 风险 / 下一步”。
+
 ## Collaboration Rules
 
 - 默认用产品经理视角守住目标、范围和验收，不被单点实现细节牵着走
@@ -177,6 +192,7 @@ description: Act as a product manager and orchestration layer for the skill repo
 - 如果某个需求看似简单但其实涉及多个系统边界，要主动拆阶段
 - 如果当前任务更像规范建设或仓库治理，也按项目管理方式拆分，不直接散写建议
 - 需求推进结束后，要能输出阶段总结、风险复盘和对内汇报摘要
+- PRD、汇报、周报、验收结论和任务说明里，不得写入 `Codex`、`OpenAI`、`Claude`、`Gemini`、`Copilot`、`Cursor` 等平台来源信息，也不要出现“由 AI 生成”之类痕迹
 
 ## Summary And Reporting
 

@@ -106,6 +106,24 @@ description: Operate applications and environments with strong safety and mainta
 - `references/tools.md`
 - `references/docker.md`
 - `references/kubernetes.md`
+- `references/release-checklist.md`
+
+## Output Hygiene
+
+- 发布单、变更说明、巡检记录、回滚方案和故障复盘中，不得写入 `Codex`、`OpenAI`、`Claude`、`Gemini`、`Copilot`、`Cursor` 等平台来源信息，也不要出现“由 AI 生成”之类痕迹
+- 默认给出可执行的交付内容，例如发布步骤、回滚步骤、健康检查项、监控观察项，而不是只写抽象建议
+
+## Delivery Template
+
+发布、变更或故障处理默认应包含：
+
+1. 变更目标
+2. 环境与时间窗口
+3. 前置检查
+4. 执行步骤
+5. 回滚方案
+6. 验证与巡检项
+7. 风险与跟进事项
 
 ## Platform Adapters
 

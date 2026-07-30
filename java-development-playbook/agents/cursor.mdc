@@ -8,7 +8,12 @@ alwaysApply: false
 
 When implementing Java backend work:
 
-- Ask first whether the project is monolithic or microservices.
+- Ask about monolith versus microservices only when the current context has not established it.
+- Prefer a layer-first single application for a monolith unless stable boundaries justify modules.
 - Keep comments, layering, and business boundaries clear.
 - Enforce `service` interfaces with `service.impl` implementations.
+- Keep Request and View types out of controllers, and keep Mapper dependencies out of controllers.
+- Use MyBatis-Plus with Mapper interfaces and `mapper.xml` without a JPA persistence path.
+- Use Lombok for mechanical code while preserving business constructors and invariants.
+- Keep URL security coarse, action roles in `@PreAuthorize`, and privileged writes denied before validation.
 - Use middleware based on business needs, not by default accumulation.
