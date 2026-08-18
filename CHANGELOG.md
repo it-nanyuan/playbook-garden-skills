@@ -4,6 +4,17 @@ All notable changes to this repository will be documented in this file.
 
 The format loosely follows Keep a Changelog.
 
+## [0.3.0] - 2026-08-18
+
+### Added
+
+- 新增 `project-memory-playbook`，用于在项目工作前读取私有 `project-memory` 仓库，并在开发过程中沉淀耐久偏好、风格和项目决策
+- 为 `project-memory-playbook` 补齐 OpenAI、Claude、Copilot、Cursor、Gemini 平台适配入口和平台说明
+
+### Changed
+
+- 更新 `skills-index.json` 与 README，将 `project-memory-playbook` 纳入 collaboration 分类
+
 ## [0.2.0] - 2026-07-30
 
 ### Added

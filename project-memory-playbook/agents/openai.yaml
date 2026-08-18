@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Memory Playbook"
+  short_description: "Read and update durable project memory"
+  default_prompt: "Use $project-memory-playbook before working on this project."

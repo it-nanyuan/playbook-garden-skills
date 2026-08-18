@@ -1,0 +1,16 @@
+---
+description: Project memory sync and update rules
+globs:
+alwaysApply: false
+---
+
+# Project Memory Playbook
+
+Use this playbook before project work that needs durable user preferences or project context.
+
+- Sync and read `it-nanyuan/project-memory` before planning, designing, implementing, debugging, or reviewing.
+- Apply recorded preferences and project conventions quietly in the work.
+- Read design memory for UI, UX, visual, app, website, game, slide, or product-facing tasks.
+- Update memory when the user expresses a durable like, dislike, correction, rule, or reusable project decision.
+- Keep memory updates concise and commit them separately.
+- Never store secrets, credentials, tokens, recovery details, temporary logs, or low-confidence guesses.

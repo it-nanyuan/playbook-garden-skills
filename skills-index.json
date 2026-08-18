@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "repo_name": "playbook-garden-skills",
-  "repo_version": "0.2.0",
+  "repo_version": "0.3.0",
   "default_language": "zh-CN",
-  "skill_count": 22,
+  "skill_count": 23,
   "changelog_path": "CHANGELOG.md",
-  "generated_at": "2026-07-30",
+  "generated_at": "2026-08-18",
   "skills": [
     {
       "name": "Git Commit Playbook",
@@ -105,6 +105,26 @@
           "gemini": "market-research-playbook/agents/gemini.md"
         },
         "platforms": "market-research-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Project Memory Playbook",
+      "slug": "project-memory-playbook",
+      "path": "project-memory-playbook",
+      "category": "collaboration",
+      "default_language": "zh-CN",
+      "description": "读取和更新私有 project-memory 仓库，沉淀跨项目偏好、风格和决策。",
+      "recommended_with": ["product-manager-playbook", "git-commit-playbook"],
+      "entrypoints": {
+        "skill": "project-memory-playbook/SKILL.md",
+        "agents": {
+          "openai": "project-memory-playbook/agents/openai.yaml",
+          "claude": "project-memory-playbook/agents/claude.md",
+          "copilot": "project-memory-playbook/agents/copilot-instructions.md",
+          "cursor": "project-memory-playbook/agents/cursor.mdc",
+          "gemini": "project-memory-playbook/agents/gemini.md"
+        },
+        "platforms": "project-memory-playbook/references/platforms/README.md"
       }
     },
     {
