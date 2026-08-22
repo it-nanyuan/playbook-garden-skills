@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "repo_name": "playbook-garden-skills",
-  "repo_version": "0.3.0",
+  "repo_version": "0.3.1",
   "default_language": "zh-CN",
   "skill_count": 23,
   "changelog_path": "CHANGELOG.md",
-  "generated_at": "2026-08-18",
+  "generated_at": "2026-08-22",
   "skills": [
     {
       "name": "Git Commit Playbook",
@@ -113,7 +113,7 @@
       "path": "project-memory-playbook",
       "category": "collaboration",
       "default_language": "zh-CN",
-      "description": "读取和更新私有 project-memory 仓库，沉淀跨项目偏好、风格和决策。",
+      "description": "读取、校准和更新私有 project-memory 仓库，沉淀跨项目偏好、习惯、风格和决策。",
       "recommended_with": ["product-manager-playbook", "git-commit-playbook"],
       "entrypoints": {
         "skill": "project-memory-playbook/SKILL.md",

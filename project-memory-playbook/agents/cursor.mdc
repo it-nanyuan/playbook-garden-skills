@@ -10,7 +10,9 @@ Use this playbook before project work that needs durable user preferences or pro
 
 - Sync and read `it-nanyuan/project-memory` before planning, designing, implementing, debugging, or reviewing.
 - Apply recorded preferences and project conventions quietly in the work.
+- Read `memory/habits.md` to understand working style and calibration gaps.
 - Read design memory for UI, UX, visual, app, website, game, slide, or product-facing tasks.
 - Update memory when the user expresses a durable like, dislike, correction, rule, or reusable project decision.
+- If habits are sparse or the user says they are not understood, follow `references/habit-calibration.md`.
 - Keep memory updates concise and commit them separately.
 - Never store secrets, credentials, tokens, recovery details, temporary logs, or low-confidence guesses.

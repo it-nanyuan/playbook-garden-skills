@@ -4,6 +4,18 @@ All notable changes to this repository will be documented in this file.
 
 The format loosely follows Keep a Changelog.
 
+## [0.3.1] - 2026-08-22
+
+### Added
+
+- 为 `project-memory-playbook` 增加习惯校准流程，在记忆稀疏或用户反馈“不够了解习惯”时主动识别偏好空白
+- 新增 `references/habit-calibration.md`，规范 confirmed habit、working style signal 和 needs calibration 的记录方式
+
+### Changed
+
+- 更新 `project-memory-playbook` 的读取顺序，将 `memory/habits.md` 纳入默认记忆来源
+- 同步更新多平台 agents、README 和 `skills-index.json`，强调读取、校准和更新项目记忆
+
 ## [0.3.0] - 2026-08-18
 
 ### Added
