@@ -4,6 +4,14 @@ All notable changes to this repository will be documented in this file.
 
 The format loosely follows Keep a Changelog.
 
+## [0.3.4] - 2026-08-27
+
+### Changed
+
+- 重做 `project-memory-playbook` 的习惯校准规则，要求每条 durable habit 写清 `Status`、`Trigger`、`Apply` 和 `Counterexample`
+- 将校准重点收敛到自主执行边界、视觉验收、真实 API/地图验证、完整产品闭环、交付节奏和运维保守边界
+- 明确普通任务最多问 1-3 个问题，完整习惯画像刷新时只在 `memory/habits.md` 保留 5 个最高价值校准问题
+
 ## [0.3.3] - 2026-08-27
 
 ### Changed

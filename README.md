@@ -24,7 +24,7 @@
 - [CHANGELOG.md](CHANGELOG.md)
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 
-当前仓库规范版本：`0.3.3`。
+当前仓库规范版本：`0.3.4`。
 
 推荐读取顺序：
 

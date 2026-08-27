@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "repo_name": "playbook-garden-skills",
-  "repo_version": "0.3.3",
+  "repo_version": "0.3.4",
   "default_language": "zh-CN",
   "skill_count": 23,
   "changelog_path": "CHANGELOG.md",
