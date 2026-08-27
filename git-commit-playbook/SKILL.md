@@ -5,6 +5,16 @@ description: Draft clear, structured Git commit messages for code changes. Use w
 
 # Git Commit Playbook
 
+## Project Memory Preflight
+
+在把本 skill 用到任何真实项目前，先执行 `project-memory-playbook`；如果本轮任务已经读过项目记忆，可直接沿用。
+
+- 同步并读取 `$HOME/Codex/project-memory`。
+- 先应用 `memory/preferences.md`、`memory/habits.md`、`memory/development.md`、`memory/decisions.md` 和匹配的 `projects/*` 记录，再决定方案、风格和实现。
+- UI/UX、产品、视觉、网站、App、游戏或图片相关任务还要读取 `memory/design-style.md`。
+- 如果 `memory/habits.md`、`memory/design-style.md` 或项目记录不足以指导当前任务，按 `project-memory-playbook` 的习惯校准流程处理，不要假装已经了解。
+- 工作中出现新的长期偏好、习惯信号或项目约定时，按 `project-memory-playbook` 写回记忆库，并让记忆提交与项目代码提交分开。
+
 ## Overview
 
 这个 skill 用来为 Git 代码提交起草清晰、可复查的提交说明。它的默认目标不是“自动提交”，而是先根据实际改动生成一版高质量提交文案，方便用户检查后再决定是否执行 `git commit`。

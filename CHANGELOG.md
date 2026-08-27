@@ -4,6 +4,14 @@ All notable changes to this repository will be documented in this file.
 
 The format loosely follows Keep a Changelog.
 
+## [0.3.2] - 2026-08-27
+
+### Changed
+
+- 为所有非 `project-memory-playbook` 的 playbook 增加 `Project Memory Preflight`，要求真实项目工作先读取私有 `project-memory` 仓库
+- 前置段补充习惯校准要求：当 habits、design-style 或项目记录不足以指导当前任务时，不继续猜测偏好
+- 更新 README、CONTRIBUTING 和 `skills-index.json`，将项目记忆前置提升为仓库级约束
+
 ## [0.3.1] - 2026-08-22
 
 ### Added

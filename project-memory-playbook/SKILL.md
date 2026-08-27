@@ -11,6 +11,11 @@ Use NAN's private `it-nanyuan/project-memory` repository as durable cross-projec
 Before project work, sync and read the memory so decisions match known preferences and known gaps.
 During work, capture only durable preferences, habits, conventions, and decisions that should affect future projects.
 
+## Enforcement In Other Playbooks
+
+Other project-facing playbooks should keep a concise `Project Memory Preflight` section near the top of `SKILL.md`.
+That preflight should require this skill before real project work, and should route sparse habits or unclear taste back to habit calibration instead of guessing.
+
 ## Repository
 
 - Remote: `https://github.com/it-nanyuan/project-memory`

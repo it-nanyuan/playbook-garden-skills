@@ -16,6 +16,18 @@
 
 如果某个 skill 暂时缺少平台文件，提交说明里要明确原因和后续补齐计划。
 
+## Project Memory Preflight
+
+除 `project-memory-playbook` 自身外，真实项目会用到的 playbook 都应在 `SKILL.md` 的主标题后保留 `Project Memory Preflight`。
+
+这个前置段至少要说明：
+
+- 先执行 `project-memory-playbook`，同步并读取 `$HOME/Codex/project-memory`
+- 先应用通用偏好、习惯、开发规则、决策记录和匹配的项目记忆，再决定方案
+- UI/UX、产品、视觉、网站、App、游戏或图片相关任务还要读取 `memory/design-style.md`
+- 记忆不足时走习惯校准流程，不假装已经了解
+- 开发过程中发现长期偏好、习惯信号或项目约定时写回记忆库，且记忆提交与项目提交分开
+
 ## Front Matter Contract
 
 `SKILL.md` 的 frontmatter 最少包含：
@@ -58,10 +70,11 @@
 修改 skill 时请自检：
 
 1. 是否只改了必要文件，没有把平台规则写散。
-2. 是否同步更新 `agents/*` 与 `references/platforms/*`。
-3. 是否需要更新根级 [skills-index.json](skills-index.json)。
-4. 是否需要更新 [README.md](README.md) 的 Skill Map、Current Scope 或 Install 说明。
-5. 是否需要更新 [CHANGELOG.md](CHANGELOG.md)。
+2. 如果是项目型 playbook，是否保留并同步了 `Project Memory Preflight`。
+3. 是否同步更新 `agents/*` 与 `references/platforms/*`。
+4. 是否需要更新根级 [skills-index.json](skills-index.json)。
+5. 是否需要更新 [README.md](README.md) 的 Skill Map、Current Scope 或 Install 说明。
+6. 是否需要更新 [CHANGELOG.md](CHANGELOG.md)。
 
 ## PR Checklist
 

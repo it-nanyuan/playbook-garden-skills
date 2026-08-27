@@ -24,7 +24,7 @@
 - [CHANGELOG.md](CHANGELOG.md)
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 
-当前仓库规范版本：`0.3.1`。
+当前仓库规范版本：`0.3.2`。
 
 推荐读取顺序：
 
@@ -41,6 +41,7 @@
 | 规范优先 | 风格、命名、结构、注释、边界、回滚策略都先于临时发挥 |
 | 商用品质 | 默认面向真实业务系统和长期协作，而不是一次性 Demo |
 | 可维护性 | 代码、SQL、脚本、文档、配置都要考虑后续接手成本 |
+| 项目记忆前置 | 真实项目工作先读取 `project-memory-playbook`，记忆稀疏时先校准习惯再继续 |
 | 平台可消费 | skill 既能给人读，也尽量整理成平台容易接入的结构 |
 
 ## Default Language
@@ -50,6 +51,12 @@
 - 项目内新增代码注释默认使用中文
 - Git 提交文案默认使用中文
 - 只有当团队、仓库历史或用户明确要求英文时，才切换到英文
+
+## Project Memory Preflight
+
+除 `project-memory-playbook` 自身外，每个真实项目会用到的 playbook 都应在 `SKILL.md` 顶部保留 `Project Memory Preflight`。
+
+这个前置段要求在开发、设计、测试、运维、提交或调研前先同步并读取私有 `project-memory` 仓库；如果 `memory/habits.md`、`memory/design-style.md` 或项目记录还不足以指导当前任务，就按 `project-memory-playbook` 的习惯校准流程处理，而不是继续猜偏好。
 
 ## Skill Map
 
@@ -219,17 +226,19 @@
 
 ### For Humans
 
-1. 找到对应 skill。
-2. 先看 `SKILL.md` 理解核心规则。
-3. 需要细节时再读 `references/`。
-4. 新增规范时尽量保持和现有 skill 同一组织方式。
+1. 先读取 `project-memory-playbook`，同步并应用私有项目记忆。
+2. 找到对应 skill。
+3. 先看 `SKILL.md` 理解核心规则。
+4. 需要细节时再读 `references/`。
+5. 新增规范时尽量保持和现有 skill 同一组织方式。
 
 ### For AI Platforms
 
-1. 在真正执行前先加载对应 skill。
-2. 如果需求不明确，优先按 skill 要求提问。
-3. 输出时遵守 skill 的结构、命名、注释和交互规范。
-4. 不要跳过 skill 直接自由发挥。
+1. 在真正执行前先加载 `project-memory-playbook` 和对应领域 skill。
+2. 如果项目记忆不足以指导当前任务，先按习惯校准流程补关键问题。
+3. 如果需求不明确，优先按 skill 要求提问。
+4. 输出时遵守 skill 的结构、命名、注释和交互规范。
+5. 不要跳过 skill 直接自由发挥。
 
 ## Current Scope
 

@@ -5,6 +5,16 @@ description: Build maintainable Python services with clear engineering standards
 
 # Python Development Playbook
 
+## Project Memory Preflight
+
+在把本 skill 用到任何真实项目前，先执行 `project-memory-playbook`；如果本轮任务已经读过项目记忆，可直接沿用。
+
+- 同步并读取 `$HOME/Codex/project-memory`。
+- 先应用 `memory/preferences.md`、`memory/habits.md`、`memory/development.md`、`memory/decisions.md` 和匹配的 `projects/*` 记录，再决定方案、风格和实现。
+- UI/UX、产品、视觉、网站、App、游戏或图片相关任务还要读取 `memory/design-style.md`。
+- 如果 `memory/habits.md`、`memory/design-style.md` 或项目记录不足以指导当前任务，按 `project-memory-playbook` 的习惯校准流程处理，不要假装已经了解。
+- 工作中出现新的长期偏好、习惯信号或项目约定时，按 `project-memory-playbook` 写回记忆库，并让记忆提交与项目代码提交分开。
+
 ## Overview
 
 这个 skill 用来为 Python 服务和应用代码建立稳定、可维护的工程规范。它默认强调模块职责、注释、类型意识、测试、依赖管理和运行时边界，而不是把脚本、业务逻辑、数据库访问和外部调用全部堆在一个文件里。

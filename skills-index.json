@@ -1,11 +1,16 @@
 {
   "schema_version": "1.0.0",
   "repo_name": "playbook-garden-skills",
-  "repo_version": "0.3.1",
+  "repo_version": "0.3.2",
   "default_language": "zh-CN",
   "skill_count": 23,
   "changelog_path": "CHANGELOG.md",
-  "generated_at": "2026-08-22",
+  "generated_at": "2026-08-27",
+  "global_preflight": {
+    "skill": "project-memory-playbook",
+    "applies_to": "all project-facing playbooks except project-memory-playbook itself",
+    "rule": "Before real project work, sync and read $HOME/Codex/project-memory; calibrate habits when memory is insufficient; write durable preferences and project conventions back separately from project commits."
+  },
   "skills": [
     {
       "name": "Git Commit Playbook",
