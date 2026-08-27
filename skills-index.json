@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "repo_name": "playbook-garden-skills",
-  "repo_version": "0.3.2",
+  "repo_version": "0.3.3",
   "default_language": "zh-CN",
   "skill_count": 23,
   "changelog_path": "CHANGELOG.md",
@@ -9,7 +9,7 @@
   "global_preflight": {
     "skill": "project-memory-playbook",
     "applies_to": "all project-facing playbooks except project-memory-playbook itself",
-    "rule": "Before real project work, sync and read $HOME/Codex/project-memory; calibrate habits when memory is insufficient; write durable preferences and project conventions back separately from project commits."
+    "rule": "Before real project work, sync and read $HOME/Codex/project-memory; calibrate habits when memory is insufficient; write durable preferences and project conventions back separately from project commits; if memory changed during the task, commit and push the memory repository before finishing."
   },
   "skills": [
     {

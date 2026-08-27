@@ -87,15 +87,23 @@ Do not record:
 
 Keep entries concise, dated when useful, and easy to scan. Update existing sections instead of duplicating the same memory.
 
-## Commit And Push
+## Commit And Push Cadence
 
-When memory is changed, keep the memory commit separate from unrelated project code:
+Do not push every small note immediately. Accumulate confirmed durable memory during the active task, then close the loop before finishing.
+
+- If a task changes memory, finish that task with the memory repository committed, pushed, and clean.
+- Keep memory commits separate from unrelated project code commits.
+- For long-running work, create a memory checkpoint after a meaningful milestone, before switching projects, or before any handoff that could lose context.
+- Do not create a memory commit when no durable memory changed.
+- If network or GitHub auth prevents a push, keep the local changes intact and clearly report that GitHub does not have the latest memory.
+- If there are existing uncommitted memory changes from the user, preserve them and work with them. Do not overwrite or revert user-authored memory.
+
+Recommended sequence when memory changed:
 
 ```bash
 git -C "$HOME/Codex/project-memory" status --short
 git -C "$HOME/Codex/project-memory" add README.md memory projects
 git -C "$HOME/Codex/project-memory" commit -m "Update project memory"
 git -C "$HOME/Codex/project-memory" push
+git -C "$HOME/Codex/project-memory" status --short
 ```
-
-If there are existing uncommitted memory changes from the user, preserve them and work with them. Do not overwrite or revert user-authored memory.

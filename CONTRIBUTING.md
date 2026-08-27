@@ -27,6 +27,7 @@
 - UI/UX、产品、视觉、网站、App、游戏或图片相关任务还要读取 `memory/design-style.md`
 - 记忆不足时走习惯校准流程，不假装已经了解
 - 开发过程中发现长期偏好、习惯信号或项目约定时写回记忆库，且记忆提交与项目提交分开
+- 如果本轮更新了记忆，任务结束前必须单独提交并推送 `$HOME/Codex/project-memory`；除非网络或 GitHub 鉴权失败，否则不要让记忆只停留在本地
 
 ## Front Matter Contract
 

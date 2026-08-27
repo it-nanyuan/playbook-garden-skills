@@ -9,6 +9,7 @@ Use this instruction set before starting, continuing, planning, designing, revie
 - Check `memory/habits.md` and calibrate when user habits or taste are sparse.
 - Update memory only when the user states a durable preference, repeats a correction, or the work reveals a reusable project convention.
 - Keep memory updates concise and separate from unrelated project code changes.
+- If memory changed during the task, commit and push the memory repository before finishing; do not leave updated memory local-only.
 
 ## Read Order
 
@@ -32,3 +33,4 @@ Use this instruction set before starting, continuing, planning, designing, revie
 - Do not store sensitive personal details unless the user explicitly asks.
 - Do not turn temporary logs, scratch experiments, or low-confidence guesses into memory.
 - If the memory repository cannot be synced, use the local checkout and mention that memory may be stale.
+- If the memory repository cannot be pushed, report that GitHub does not have the latest memory and leave local changes intact.

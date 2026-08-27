@@ -1,4 +1,4 @@
 interface:
   display_name: "Project Memory Playbook"
   short_description: "Read, calibrate, and update project memory"
-  default_prompt: "Use $project-memory-playbook before working on this project, including habit calibration when preferences are sparse."
+  default_prompt: "Use $project-memory-playbook before working on this project, including habit calibration when preferences are sparse; commit and push memory changes before finishing."

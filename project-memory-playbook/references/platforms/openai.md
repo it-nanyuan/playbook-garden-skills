@@ -17,4 +17,4 @@ OpenAI / Codex 集成当前通过 `agents/openai.yaml` 暴露基础元信息，�
 ## Maintenance Notes
 
 - 这里只放平台可读的元信息，不要把大段规范复制进 `yaml`。
-- 核心规则变化后，优先检查 `default_prompt` 是否仍能准确概括 skill 的用途。
+- 核心规则变化后，优先检查 `default_prompt` 是否仍能准确概括 skill 的用途，尤其是读取记忆、习惯校准和结束前推送记忆这三件事。

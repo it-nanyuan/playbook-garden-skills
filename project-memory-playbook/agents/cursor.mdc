@@ -15,4 +15,5 @@ Use this playbook before project work that needs durable user preferences or pro
 - Update memory when the user expresses a durable like, dislike, correction, rule, or reusable project decision.
 - If habits are sparse or the user says they are not understood, follow `references/habit-calibration.md`.
 - Keep memory updates concise and commit them separately.
+- If memory changed during the task, push the separate memory commit before finishing; do not leave updated memory only in the local checkout.
 - Never store secrets, credentials, tokens, recovery details, temporary logs, or low-confidence guesses.

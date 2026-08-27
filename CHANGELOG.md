@@ -4,6 +4,14 @@ All notable changes to this repository will be documented in this file.
 
 The format loosely follows Keep a Changelog.
 
+## [0.3.3] - 2026-08-27
+
+### Changed
+
+- 明确项目记忆提交推送节奏：不逐条即时推送，但本轮任务只要改过记忆，结束前必须单独提交并推送
+- 长任务在重要里程碑、切换项目或交接前应创建记忆 checkpoint，避免本地记忆未同步到 GitHub
+- 同步更新 `project-memory-playbook`、多平台 agents、README、CONTRIBUTING、`skills-index.json` 和各领域 playbook 前置段
+
 ## [0.3.2] - 2026-08-27
 
 ### Changed

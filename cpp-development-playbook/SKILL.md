@@ -14,6 +14,7 @@ description: Build maintainable C++ services, libraries, desktop modules, and sy
 - UI/UX、产品、视觉、网站、App、游戏或图片相关任务还要读取 `memory/design-style.md`。
 - 如果 `memory/habits.md`、`memory/design-style.md` 或项目记录不足以指导当前任务，按 `project-memory-playbook` 的习惯校准流程处理，不要假装已经了解。
 - 工作中出现新的长期偏好、习惯信号或项目约定时，按 `project-memory-playbook` 写回记忆库，并让记忆提交与项目代码提交分开。
+- 如果本轮更新了记忆，任务结束前必须在 `$HOME/Codex/project-memory` 单独提交并推送；不要只停留在本地。若网络或 GitHub 鉴权失败，要明确报告未推送状态。
 
 ## Overview
 

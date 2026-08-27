@@ -9,6 +9,7 @@ Apply these rules before project planning, design, implementation, debugging, or
 - Use `memory/habits.md` to understand working style and known calibration gaps.
 - Capture new memory only when it is durable and reusable.
 - Keep memory commits separate from unrelated project code.
+- If memory changed during the task, commit and push `it-nanyuan/project-memory` before finishing.
 
 ## Memory Sources
 
@@ -26,3 +27,4 @@ Apply these rules before project planning, design, implementation, debugging, or
 - Avoid noisy logs, temporary experiments, and one-off notes.
 - Prefer updating an existing memory section over duplicating entries.
 - When habits are sparse or the user says preferences are not understood, follow `references/habit-calibration.md`.
+- If push fails because of network or GitHub auth, say that the latest memory is still local and preserve the local changes.

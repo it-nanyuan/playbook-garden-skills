@@ -2,4 +2,4 @@
 
 - Consumed file: `agents/copilot-instructions.md`
 - Best used through repository or workspace instruction entry points.
-- Keep the message focused on reading project memory before coding, checking habit gaps, and updating only durable reusable context.
+- Keep the message focused on reading project memory before coding, checking habit gaps, updating only durable reusable context, and pushing memory changes before finishing.
