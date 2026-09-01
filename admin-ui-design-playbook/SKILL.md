@@ -65,6 +65,7 @@ description: Design professional, commercially credible admin and dashboard inte
 - 不要用成段文字去解释页面功能，页面本身必须能直接表达任务流
 - 除非用户明确要求活动页、专题页、引导页，否则默认按真实产品页面设计
 - 默认只输出页面本身，不追加大背景、说明区、卖点图标、设计注释和展示文案
+- 企业移动 App、MES / ERP、仓储、物流、路径、排程、生产管控类页面，默认可采用蓝白高密度运营风格：强蓝色顶栏、白色内容面、紧凑指标、清晰图表 / 地图 / 进度控件、轻分隔和稳定状态色，避免装饰性渐变、大卡片和口号式文字
 
 ## Admin Web Rules
 
@@ -130,7 +131,7 @@ description: Design professional, commercially credible admin and dashboard inte
 
 - `references/discovery.md`：设计前该问什么，怎么在不打扰用户的前提下补齐上下文
 - `references/admin-web-layout.md`：后台布局、导航、标签栏、筛选区、表格区和滚动规则
-- `references/visual-quality.md`：商用品质基线、排版密度、卡片使用和常见反模式
+- `references/visual-quality.md`：商用品质基线、排版密度、卡片使用、移动端企业业务风格和常见反模式
 - `references/frameworks.md`：`Vue`、`React`、`TypeScript`、`Ant Design`、`Element Plus` 的选择规则
 
 ## Platform Adapters

@@ -13,3 +13,4 @@ When designing or implementing admin UI:
 - Prefer professional business layouts over decorative card-heavy pages.
 - Use clear navigation, structured content regions, readable filters, and operationally useful tables.
 - Avoid large titles and long descriptive text unless the product genuinely needs them.
+- For enterprise mobile operations, prefer compact blue-white task screens with dense KPIs, charts/maps/progress, filters, bottom tabs, and consistent status colors.

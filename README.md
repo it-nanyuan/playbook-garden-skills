@@ -25,7 +25,7 @@
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 - [scripts/validate_project_playbook_install.py](scripts/validate_project_playbook_install.py)
 
-当前仓库规范版本：`0.3.5`。
+当前仓库规范版本：`0.3.6`。
 
 推荐读取顺序：
 
@@ -84,7 +84,7 @@ python3 scripts/validate_project_playbook_install.py
 
 | Skill | 方向 | 主要用途 | 关键约束 |
 | --- | --- | --- | --- |
-| `admin-ui-design-playbook` | 商用后台 UI 设计 | 设计控制台、管理系统、数据后台和运营平台 | 先问风格、竞品、用户与任务；避免大标题、卡片墙和文字堆砌；强调后台布局、导航、tag、筛选区和表格规范 |
+| `admin-ui-design-playbook` | 商用后台 UI 设计 | 设计控制台、管理系统、数据后台、运营平台和企业移动工作台 | 先问风格、竞品、用户与任务；避免大标题、卡片墙和文字堆砌；强调后台布局、导航、tag、筛选区、表格规范和蓝白高密度移动业务界面 |
 
 ### Frontend And Mobile
 

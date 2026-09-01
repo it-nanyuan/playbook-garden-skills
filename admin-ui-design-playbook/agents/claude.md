@@ -12,6 +12,7 @@ Use this instruction set when the task involves admin UI, dashboard UI, business
 ## Design Rules
 
 - For admin systems, prefer structured layouts, stable navigation, clear filters, readable tables, and restrained typography.
+- For enterprise mobile operations, prefer compact blue-white workflow screens with dense KPIs, charts, maps, progress, filters, bottom tabs, and consistent status colors.
 - Avoid turning admin pages into marketing hero sections.
 - When the task involves backend consoles, follow the repository's admin UI rules for top nav, tag bars, side menus, and table behavior.
 - Keep explanations short and let structure carry the interface.

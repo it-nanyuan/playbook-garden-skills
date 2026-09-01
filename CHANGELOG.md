@@ -4,6 +4,13 @@ All notable changes to this repository will be documented in this file.
 
 The format loosely follows Keep a Changelog.
 
+## [0.3.6] - 2026-09-01
+
+### Changed
+
+- 同步移动端企业业务界面审美规则：企业 App、MES / ERP、仓储、物流、路径、排程和生产管控页面优先采用蓝白高密度运营风格
+- 更新 `admin-ui-design-playbook` 及平台入口，明确紧凑指标、图表 / 地图 / 进度控件、底部 tab、固定动作区和稳定状态色的设计基线
+
 ## [0.3.5] - 2026-09-01
 
 ### Added

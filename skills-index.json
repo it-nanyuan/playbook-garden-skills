@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "repo_name": "playbook-garden-skills",
-  "repo_version": "0.3.5",
+  "repo_version": "0.3.6",
   "default_language": "zh-CN",
   "skill_count": 23,
   "changelog_path": "CHANGELOG.md",
@@ -150,7 +150,7 @@
       "path": "admin-ui-design-playbook",
       "category": "design",
       "default_language": "zh-CN",
-      "description": "商用后台与专业业务界面设计规范。",
+      "description": "商用后台、企业移动工作台与专业业务界面设计规范。",
       "recommended_with": ["frontend-development-playbook", "ios-development-playbook", "android-development-playbook", "flutter-hybrid-development-playbook", "react-native-development-playbook"],
       "entrypoints": {
         "skill": "admin-ui-design-playbook/SKILL.md",
