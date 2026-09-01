@@ -23,8 +23,9 @@
 - [skills-index.json](skills-index.json)
 - [CHANGELOG.md](CHANGELOG.md)
 - [CONTRIBUTING.md](CONTRIBUTING.md)
+- [scripts/validate_project_playbook_install.py](scripts/validate_project_playbook_install.py)
 
-当前仓库规范版本：`0.3.4`。
+当前仓库规范版本：`0.3.5`。
 
 推荐读取顺序：
 
@@ -59,6 +60,12 @@
 这个前置段要求在开发、设计、测试、运维、提交或调研前先同步并读取私有 `project-memory` 仓库；如果 `memory/habits.md`、`memory/design-style.md` 或项目记录还不足以指导当前任务，就按 `project-memory-playbook` 的习惯校准流程处理，而不是继续猜偏好。
 
 如果本轮工作更新了项目记忆，结束前必须把 `$HOME/Codex/project-memory` 单独提交并推送到 GitHub。不要每条小记录都立刻推送；按任务或重要里程碑批量提交，长任务在切换项目、交接或可能丢失上下文前做 checkpoint。
+
+安装版同步后，运行下面的可重复校验，确认所有 project-facing playbook 的源码目录与 `$HOME/.codex/skills` 安装目录完全一致，并且 `SKILL.md` 保留必要的 `Project Memory Preflight` 语义：
+
+```bash
+python3 scripts/validate_project_playbook_install.py
+```
 
 ## Skill Map
 

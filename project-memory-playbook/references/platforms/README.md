@@ -20,3 +20,5 @@
 1. 先更新核心记忆工作流、习惯校准规则和提交推送节奏。
 2. 再同步更新相关 `agents/` 文件。
 3. 最后检查本目录的平台说明是否仍然准确。
+
+当维护 `Project Memory Preflight` 或同步安装版时，还要运行根目录的 `scripts/validate_project_playbook_install.py`，确认所有 project-facing playbook 在源码目录与 `$HOME/.codex/skills` 安装目录中完全一致。

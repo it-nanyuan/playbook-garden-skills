@@ -15,6 +15,7 @@ During work, capture only durable preferences, habits, conventions, and decision
 
 Other project-facing playbooks should keep a concise `Project Memory Preflight` section near the top of `SKILL.md`.
 That preflight should require this skill before real project work, and should route sparse habits or unclear taste back to habit calibration instead of guessing.
+When maintaining `playbook-garden-skills`, sync source playbooks to `$HOME/.codex/skills` and run `scripts/validate_project_playbook_install.py` so every project-facing playbook stays identical between the source and installed copies.
 
 ## Repository
 

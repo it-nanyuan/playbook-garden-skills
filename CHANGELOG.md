@@ -4,6 +4,17 @@ All notable changes to this repository will be documented in this file.
 
 The format loosely follows Keep a Changelog.
 
+## [0.3.5] - 2026-09-01
+
+### Added
+
+- 新增 `scripts/validate_project_playbook_install.py`，可重复校验所有 project-facing playbook 的源码目录与 `$HOME/.codex/skills` 安装目录完全一致
+- 校验同时检查 `SKILL.md` 是否保留必要的 `Project Memory Preflight` 语义，避免源码和安装版漂移
+
+### Changed
+
+- 更新 `project-memory-playbook` 维护说明，要求维护 `Project Memory Preflight` 或同步安装版后运行安装版一致性校验
+
 ## [0.3.4] - 2026-08-27
 
 ### Changed

@@ -1,15 +1,27 @@
 {
   "schema_version": "1.0.0",
   "repo_name": "playbook-garden-skills",
-  "repo_version": "0.3.4",
+  "repo_version": "0.3.5",
   "default_language": "zh-CN",
   "skill_count": 23,
   "changelog_path": "CHANGELOG.md",
-  "generated_at": "2026-08-27",
+  "generated_at": "2026-09-01",
   "global_preflight": {
     "skill": "project-memory-playbook",
     "applies_to": "all project-facing playbooks except project-memory-playbook itself",
     "rule": "Before real project work, sync and read $HOME/Codex/project-memory; calibrate habits when memory is insufficient; write durable preferences and project conventions back separately from project commits; if memory changed during the task, commit and push the memory repository before finishing."
+  },
+  "validation": {
+    "project_facing_playbook_install": {
+      "script": "scripts/validate_project_playbook_install.py",
+      "installed_root_default": "$HOME/.codex/skills",
+      "scope": "all skills whose slug ends with -playbook except project-memory-playbook",
+      "checks": [
+        "source and installed directory file sets match",
+        "source and installed file contents match",
+        "SKILL.md keeps the required Project Memory Preflight markers"
+      ]
+    }
   },
   "skills": [
     {

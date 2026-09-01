@@ -29,6 +29,14 @@
 - 开发过程中发现长期偏好、习惯信号或项目约定时写回记忆库，且记忆提交与项目提交分开
 - 如果本轮更新了记忆，任务结束前必须单独提交并推送 `$HOME/Codex/project-memory`；除非网络或 GitHub 鉴权失败，否则不要让记忆只停留在本地
 
+同步源码与安装版后，运行：
+
+```bash
+python3 scripts/validate_project_playbook_install.py
+```
+
+这个脚本会从 `skills-index.json` 枚举所有 project-facing playbook，比较源码目录和 `$HOME/.codex/skills` 里的安装目录，并检查 `SKILL.md` 是否仍包含必要的 `Project Memory Preflight` 语义。
+
 ## Front Matter Contract
 
 `SKILL.md` 的 frontmatter 最少包含：
@@ -76,6 +84,7 @@
 4. 是否需要更新根级 [skills-index.json](skills-index.json)。
 5. 是否需要更新 [README.md](README.md) 的 Skill Map、Current Scope 或 Install 说明。
 6. 是否需要更新 [CHANGELOG.md](CHANGELOG.md)。
+7. 如果改动涉及 project-facing playbook 或安装版同步，是否已运行 `python3 scripts/validate_project_playbook_install.py`。
 
 ## PR Checklist
 
