@@ -6,3 +6,4 @@ alwaysApply: false
 - Clarify test target, test goal, and acceptance basis first.
 - Default to Chinese for test notes, defects, and release conclusions unless explicitly changed.
 - Output concrete test scope, defects, risks, and release recommendation.
+- Verify changed UI and API behavior in running surfaces when feasible; separate static, runtime, device, and field evidence.

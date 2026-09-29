@@ -18,3 +18,4 @@ Use this instruction set when implementing Java backend work.
 - Use Lombok only for mechanical code; preserve constructors that initialize state or enforce rules.
 - Keep URL-level security coarse, use `@PreAuthorize` for action roles, and preserve pre-validation denial for privileged writes.
 - Comment business rules, transactions, cache behavior, async consumers, and scheduled jobs clearly.
+- Keep external Provider details behind capability contracts, redact sensitive diagnostics, and verify actual supplier calls separately from isolated protocol tests.

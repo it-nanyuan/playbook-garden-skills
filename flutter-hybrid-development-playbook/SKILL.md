@@ -64,6 +64,9 @@ description: Build maintainable Flutter-based hybrid applications with modular e
 - 相同业务流程优先抽 shared flow、form section、state container
 - 与平台相关的桥接逻辑集中到 bridge 层，不散落在页面里
 - 中大型项目优先 `design_system`、`core_network`、`core_storage`、`feature_*` 这类 package 组织方式
+- 网络客户端和第三方 SDK 通过项目自有接口与领域模型接入；feature/UI 不直接依赖 `Dio`、HTTP 响应或供应商类型，具体适配器在组合层选择
+- 跨项目共享包区分领域契约、配置/网络/错误等基础能力、视觉组件和项目自身的 feature 组装；消费已发布共享包时使用锁定版本，避免复制源码或引用相邻目录
+- 共享控件拥有稳定的展示、回调、主题与无障碍语义；页面保留业务状态和流程。交互示例应覆盖真实状态变化，而不是只展示静态外观
 
 ## Embedded UI Baseline
 
@@ -99,6 +102,8 @@ description: Build maintainable Flutter-based hybrid applications with modular e
 
 详细见 `references/melos.md`。
 
+外部服务适配、共享包依赖和运行时验证见 `references/integration-boundaries.md`。
+
 ## Recommended Stack
 
 - State：`flutter_bloc`、`riverpod` 按项目现状选择
@@ -129,6 +134,7 @@ description: Build maintainable Flutter-based hybrid applications with modular e
 - `references/structure.md`
 - `references/melos.md`
 - `references/libraries.md`
+- `references/integration-boundaries.md`
 
 ## Platform Adapters
 

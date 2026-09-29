@@ -12,5 +12,6 @@ When designing or implementing admin UI:
 - Avoid generic AI-looking mockups.
 - Prefer professional business layouts over decorative card-heavy pages.
 - Use clear navigation, structured content regions, readable filters, and operationally useful tables.
+- In existing systems, reuse the actual shell, tabs, and list-page pattern; avoid permanent explanation banners and oversized dashboard headers.
 - Avoid large titles and long descriptive text unless the product genuinely needs them.
 - For enterprise mobile operations, prefer compact blue-white task screens with dense KPIs, charts/maps/progress, filters, bottom tabs, and consistent status colors.

@@ -70,6 +70,8 @@ description: Plan and execute structured testing work across products and system
 - 产品给出的验收标准要转成可执行测试点
 - 不接受只有“功能正常”这种空泛验收
 - 验收测试要形成明确结论：通过 / 有条件通过 / 不通过
+- UI 改动应在可运行的浏览器、模拟器或设备中检查实际布局和交互；构建、类型检查和组件单测不能代替视觉与操作验收
+- API/客户端改动在可行时请求运行中的真实服务并核对状态码、业务错误、状态流转与回退原因；mock/fixture 结果单独标记
 
 详细见 `references/acceptance-testing.md`。
 
@@ -94,6 +96,7 @@ description: Plan and execute structured testing work across products and system
 - 提测或上线前要明确：已验证项、未验证项、已知风险、建议动作
 - 关键风险不能藏在口头说明里，必须明确输出
 - 如果当前版本不具备上线条件，要直说，不做“看起来差不多”的模糊判断
+- 验证结论按自动检查、实际界面/交互、真实服务调用、真机/公网/现场等证据边界分别说明；支付、打印、推送送达、地图路线和设备权限只按实际覆盖的层级宣称通过
 
 详细见 `references/release-risk.md`。
 

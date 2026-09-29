@@ -103,6 +103,8 @@ description: Build and refactor maintainable Spring-based Java backends with cle
 - 入参 Request 放在 `dto`，对外展示 View 放在 `vo`；创建新类型前先复用语义完全一致的已有类型
 - 入参、出参、分页、列表、详情、导入导出接口要有一致风格
 - 返回体统一格式、错误码模板和分页对象命名必须在项目级统一，不允许每个模块各写一套
+- 接入多家外部服务时，对外提供按能力划分的稳定契约；供应商 HTTP/SDK 请求、响应与回调留在 Provider/适配层，不让上层业务依赖供应商类型
+- 服务选择必须能识别未配置或不受支持的供应商并明确失败；能力目录应按独立用途列出可用项和验证成熟度，不把多个不同能力合并成一个笼统开关
 
 详细见 `references/api-standard.md`。
 
@@ -127,6 +129,7 @@ description: Build and refactor maintainable Spring-based Java backends with cle
 - 关键业务流、异常、重试、降级、MQ 消费、定时任务要有清晰日志
 - 不打印敏感信息，不堆无意义日志，不漏关键上下文
 - 微服务场景要重视 traceId、请求链路和关键耗时
+- 第三方调用的观测与错误对象要审查 `toString()`、异常消息和日志字段；输入文本、向量、临时文件 URL、转写结果、受众、凭据和供应商请求标识等敏感内容不得通过调试输出泄露
 
 详细见 `references/logging.md`。
 
@@ -155,6 +158,7 @@ description: Build and refactor maintainable Spring-based Java backends with cle
 - 不要求每个 getter/setter 都测，但关键业务流程不能完全裸奔
 - 架构重构应增加静态门禁，至少覆盖 Controller 嵌套类型、越层依赖、持久化框架残留、Mapper/XML 对应关系和后台接口权限遗漏
 - 权限测试必须覆盖“无权且请求体无效”的场景，确认返回 403 而不是先进入参数校验返回 400
+- 外部供应商适配器先做隔离协议测试；有可用凭据时再做最小真实调用，并只声明被调用的具体能力、模式和环境已经验证
 
 详细见 `references/testing.md`。
 

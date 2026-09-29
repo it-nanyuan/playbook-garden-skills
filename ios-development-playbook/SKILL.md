@@ -79,6 +79,7 @@ description: Build maintainable iOS applications with clear engineering standard
 - 让页面重点落在内容结构、状态反馈、主操作、次操作和信息扫描路径上
 - 如果是后台风格或工作台风格页面，优先追求专业、克制、可商用品质，而不是装饰性
 - 用组件、留白和分组表达层级，不靠解释文字补救设计
+- 原生 SwiftUI 产品优先延续系统导航、列表、分隔线、背景、sheet 和进度反馈；是否用大导航标题取决于原生导航语境，不把企业后台的紧凑顶栏规则机械搬到 iOS
 
 ## Design Dependency
 

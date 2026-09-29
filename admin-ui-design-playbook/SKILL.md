@@ -1,6 +1,6 @@
 ---
 name: admin-ui-design-playbook
-description: Design professional, commercially credible admin and dashboard interfaces instead of text-heavy mockups. Use when the user wants backend web UI, admin pages, dashboards, operations consoles, or enterprise app layouts and needs the agent to clarify style, competitors, information density, and framework choices before proposing designs or code.
+description: Design professional admin pages, dashboards, operations consoles, and enterprise app layouts. Use existing product patterns and task context to choose navigation, density, content, and interaction before designing or coding.
 ---
 
 # Admin Ui Design Playbook
@@ -23,15 +23,15 @@ description: Design professional, commercially credible admin and dashboard inte
 ## Workflow
 
 1. 先判断任务类型：是后台网页、运营控制台、数据看板、管理系统，还是移动 App。
-2. 在开始设计前先补齐上下文；如果需求模糊，优先提问，不要直接出图或写页面。
-3. 如果用户不擅长描述风格，优先追问竞品、参考产品、喜欢或讨厌的现有页面。
+2. 在开始设计前利用现有页面、项目记忆和用户给出的参考补齐上下文；只有缺口会改变当前设计判断时才提问。
+3. 如果用户不擅长描述风格，先查看可用参考；参考仍不足以决定当前方案时，再询问喜欢或讨厌的产品页面。
 4. 如果是已有项目，先跟随现有技术栈、设计系统和交互模式，不要凭空换风格。
 5. 如果是新项目，再根据业务复杂度决定布局、导航深度、组件库和信息密度。
 6. 设计输出必须解释信息架构、布局规则、关键状态和组件选择，而不只是给一张“好看但不可落地”的图。
 
 ## Discovery Rules
 
-设计前至少确认下面几类信息；如果用户没说清，优先提 3 到 5 个最关键的问题，而不是长篇盘问：
+设计前确认下面几类信息；已有项目优先从代码、现有页面和项目记忆获取。确需用户决定时，每轮只问 1 到 3 个会改变当前方案的问题：
 
 - 这是后台网页、运营平台、数据分析系统，还是移动 App
 - 目标用户是谁，是老板、运营、客服、财务、审核员还是管理员
@@ -80,6 +80,8 @@ description: Design professional, commercially credible admin and dashboard inte
 后台布局和交互细则见 `references/admin-web-layout.md`。  
 视觉质量基线见 `references/visual-quality.md`。  
 技术栈和组件库选择见 `references/frameworks.md`。
+
+已有后台要求“与现有系统一致”时，先检查并复用实际外壳、菜单、标签、筛选、表格和弹窗行为；页面级布局不能脱离已运行的基线另起一套。管理列表不放常驻说明横幅；分析页和工作台在标签栏后直接进入指标或主内容，避免重复的大标题和说明区。具体见 `references/admin-web-layout.md`。
 
 ## Output Expectations
 

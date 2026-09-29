@@ -14,3 +14,4 @@ Use these instructions when generating frontend application code.
 - Comment complex interactions and business states.
 - Preserve maintainable frontend structure.
 - Avoid generic page output that ignores professional UI quality.
+- Consume versioned shared UI packages for presentation while keeping business API, routes, stores, and permissions in the app; do not hide real API errors with fixtures.

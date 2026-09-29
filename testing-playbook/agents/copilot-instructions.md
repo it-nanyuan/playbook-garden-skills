@@ -7,3 +7,5 @@ Start by clarifying:
 1. What is being tested?
 2. Is this smoke, functional, regression, acceptance, or release validation?
 3. What requirement or acceptance criteria should the test map to?
+
+Inspect running UI interactions and call the running service where feasible. Separate automated, simulator/browser, real-service, and device/field evidence in conclusions.

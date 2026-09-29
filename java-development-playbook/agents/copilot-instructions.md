@@ -18,3 +18,4 @@ Apply these rules when planning or implementing Java backend work.
 - Use Lombok annotations such as `@RequiredArgsConstructor`, `@Slf4j`, and safe Entity constructor annotations only for mechanical code.
 - Keep `SecurityFilterChain` coarse and action roles in `@PreAuthorize`, with minimal early guards for privileged writes.
 - Pick Redis, MQ, Elasticsearch, registry, gateway, tracing, and transaction tools only when the business actually needs them.
+- Keep supplier SDK/HTTP types behind capability contracts, redact sensitive logging, and scope real-provider verification claims to the requests actually made.

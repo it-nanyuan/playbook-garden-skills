@@ -17,3 +17,4 @@ When implementing Java backend work:
 - Use Lombok for mechanical code while preserving business constructors and invariants.
 - Keep URL security coarse, action roles in `@PreAuthorize`, and privileged writes denied before validation.
 - Use middleware based on business needs, not by default accumulation.
+- Isolate external Provider details, redact request/response diagnostics, and separate isolated protocol checks from real service verification.

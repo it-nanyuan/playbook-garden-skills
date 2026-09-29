@@ -13,3 +13,4 @@ Apply these rules when planning or implementing iOS features.
 - One primary type per file.
 - Keep views, view models, services, models, and routing separated.
 - Reuse shared components and common services before duplicating code.
+- Native SwiftUI screens should follow system navigation, list, sheet, and progress conventions rather than web-admin chrome.

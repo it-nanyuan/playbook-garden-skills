@@ -14,3 +14,4 @@ Use these instructions when building iOS features.
 - Keep one main type per file.
 - Use extensions to separate responsibilities.
 - Comment shared APIs, async behavior, and business-critical state.
+- For native SwiftUI screens, preserve system navigation, grouped lists, sheets, separators, and progress behavior when suitable.

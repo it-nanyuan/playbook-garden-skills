@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "repo_name": "playbook-garden-skills",
-  "repo_version": "0.3.6",
+  "repo_version": "0.3.7",
   "default_language": "zh-CN",
   "skill_count": 23,
   "changelog_path": "CHANGELOG.md",
-  "generated_at": "2026-09-01",
+  "generated_at": "2026-09-29",
   "global_preflight": {
     "skill": "project-memory-playbook",
     "applies_to": "all project-facing playbooks except project-memory-playbook itself",
@@ -90,7 +90,7 @@
       "path": "testing-playbook",
       "category": "collaboration",
       "default_language": "zh-CN",
-      "description": "负责测试拆解、缺陷闭环、回归验证和上线风险判断。",
+      "description": "负责测试拆解、缺陷闭环和分层证据验收，区分自动检查、运行服务、实际界面与现场验证。",
       "recommended_with": ["product-manager-playbook"],
       "entrypoints": {
         "skill": "testing-playbook/SKILL.md",
@@ -150,7 +150,7 @@
       "path": "admin-ui-design-playbook",
       "category": "design",
       "default_language": "zh-CN",
-      "description": "商用后台、企业移动工作台与专业业务界面设计规范。",
+      "description": "商用后台与企业移动工作台设计规范，强调复用现有外壳、列表骨架和紧凑内容。",
       "recommended_with": ["frontend-development-playbook", "ios-development-playbook", "android-development-playbook", "flutter-hybrid-development-playbook", "react-native-development-playbook"],
       "entrypoints": {
         "skill": "admin-ui-design-playbook/SKILL.md",
@@ -170,7 +170,7 @@
       "path": "frontend-development-playbook",
       "category": "frontend-mobile",
       "default_language": "zh-CN",
-      "description": "规范业务前端、中后台前端与 H5 项目的设计和工程实现。",
+      "description": "规范业务前端和中后台工程实现、共享 UI 包边界与真实 API 错误反馈。",
       "recommended_with": ["admin-ui-design-playbook", "comment-style-playbook"],
       "entrypoints": {
         "skill": "frontend-development-playbook/SKILL.md",
@@ -190,7 +190,7 @@
       "path": "ios-development-playbook",
       "category": "frontend-mobile",
       "default_language": "zh-CN",
-      "description": "规范 Swift、SwiftUI、UIKit 项目的工程实现与页面输出。",
+      "description": "规范 Swift、SwiftUI、UIKit 工程实现及原生系统页面习惯。",
       "recommended_with": ["admin-ui-design-playbook", "comment-style-playbook"],
       "entrypoints": {
         "skill": "ios-development-playbook/SKILL.md",
@@ -230,7 +230,7 @@
       "path": "flutter-hybrid-development-playbook",
       "category": "frontend-mobile",
       "default_language": "zh-CN",
-      "description": "规范 Flutter 混合开发、package 边界和 melos 管理。",
+      "description": "规范 Flutter 混合开发、外部服务适配、共享包边界和运行时验证。",
       "recommended_with": ["admin-ui-design-playbook", "comment-style-playbook"],
       "entrypoints": {
         "skill": "flutter-hybrid-development-playbook/SKILL.md",
@@ -270,7 +270,7 @@
       "path": "java-development-playbook",
       "category": "backend",
       "default_language": "zh-CN",
-      "description": "规范 Java 单体与微服务项目的分层、Controller、MyBatis-Plus、Lombok、权限和架构重构。",
+      "description": "规范 Java 分层、权限、外部能力 Provider 边界、敏感诊断和验证。",
       "recommended_with": ["comment-style-playbook", "dba-playbook", "devops-playbook"],
       "entrypoints": {
         "skill": "java-development-playbook/SKILL.md",

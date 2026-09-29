@@ -14,3 +14,4 @@ Use this instruction set when implementing Flutter features, hybrid app screens,
 - Keep one primary type per file.
 - Prefer `melos`-friendly package boundaries for medium and large projects.
 - Reuse design system, shared UI, and core packages before duplicating code.
+- Keep HTTP and vendor SDK types inside adapters; features depend on project-owned interfaces and domain models. Use versioned shared packages and verify live interactions.

@@ -14,3 +14,4 @@ Use this instruction set when implementing iOS features in Swift, SwiftUI, or UI
 - Keep one primary type per file.
 - Split UI, state, services, models, and routing cleanly.
 - Prefer reusable components and modular boundaries over page-local one-off code.
+- For native SwiftUI screens, use system navigation, lists, separators, sheets, and progress patterns where they fit the task.

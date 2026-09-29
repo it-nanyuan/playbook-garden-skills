@@ -14,3 +14,4 @@ Apply these rules when planning or implementing Flutter work.
 - One primary type per file.
 - Split pages, widgets, state, services, repositories, and packages clearly.
 - Use `melos`-style thinking for medium and large codebases.
+- Put external clients behind app-owned interfaces, consume versioned shared packages, and keep business state outside shared UI primitives.

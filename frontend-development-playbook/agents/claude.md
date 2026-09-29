@@ -14,3 +14,4 @@ Use this instruction set when building frontend pages, admin systems, dashboards
 - Avoid oversized single-file pages and repeated business containers.
 - For admin-style pages, preserve layout order, table behavior, and filter structure.
 - Comment complex interactions, state logic, permissions, and data mapping.
+- Shared UI libraries own presentation primitives; each app owns API, routes, stores, permissions, and domain models. Show real API failures unless a demo mode is explicitly selected.

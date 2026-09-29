@@ -12,3 +12,4 @@ When implementing Flutter work:
 - Split large widgets and feature logic cleanly.
 - Comment shared packages, bridge contracts, and business-critical state.
 - If UI design is involved, also follow the repository's admin UI quality rules.
+- Keep vendor SDK and HTTP details in adapters; use released shared packages and verify stateful examples and runtime behavior.

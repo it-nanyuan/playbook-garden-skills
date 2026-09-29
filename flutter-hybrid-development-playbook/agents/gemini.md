@@ -14,3 +14,4 @@ Use these instructions when building Flutter or hybrid app features.
 - Keep one main type per file.
 - Favor reusable packages and `melos`-style workspace discipline.
 - Comment shared APIs, bridge contracts, and complex state.
+- Isolate vendor/network types behind project-owned interfaces; consume versioned shared packages and verify interactive states in the running app.

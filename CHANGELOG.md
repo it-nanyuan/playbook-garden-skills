@@ -4,6 +4,15 @@ All notable changes to this repository will be documented in this file.
 
 The format loosely follows Keep a Changelog.
 
+## [0.3.7] - 2026-09-29
+
+### Changed
+
+- 后台设计与前端开发规范补充既有外壳/列表骨架复用、紧凑仪表盘、管理页提示边界、共享 UI 包职责和真实 API 错误反馈
+- Flutter 规范补充外部服务适配、已发布共享包消费、组件状态归属与运行时验证；iOS 规范明确原生 SwiftUI 系统视觉优先
+- Java 规范补充多供应商能力契约、敏感诊断脱敏和真实供应商验证范围
+- 测试规范区分自动检查、运行界面、真实服务、真机与现场证据
+
 ## [0.3.6] - 2026-09-01
 
 ### Changed

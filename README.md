@@ -25,7 +25,7 @@
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 - [scripts/validate_project_playbook_install.py](scripts/validate_project_playbook_install.py)
 
-当前仓库规范版本：`0.3.6`。
+当前仓库规范版本：`0.3.7`。
 
 推荐读取顺序：
 
@@ -76,7 +76,7 @@ python3 scripts/validate_project_playbook_install.py
 | `git-commit-playbook` | Git 提交规范 | 统一提交标题、前缀、正文和语言确认流程 | 标题强制 `type: summary`；正文必须编号列出改动；语言不明确时默认使用中文 |
 | `comment-style-playbook` | 跨语言注释规范 | 统一类、方法、字段、模块和复杂逻辑的注释写法 | 关键公共能力必须写职责；复杂流程必须写意图；注释强调边界、副作用和约束 |
 | `product-manager-playbook` | 产品经理调度规范 | 负责需求澄清、范围拆解、验收定义、总结汇报和 skill 路由 | 先问业务目标、用户、范围和阶段；默认按顺序协调调研、设计、开发、测试、数据、运维与交付 skill |
-| `testing-playbook` | 测试规范 | 负责测试拆解、用例设计、回归验证、缺陷闭环和上线风险判断 | 先问测试对象、目标和验收依据；输出测试范围、缺陷、风险和提测 / 上线结论 |
+| `testing-playbook` | 测试规范 | 负责测试拆解、用例设计、回归验证、缺陷闭环和上线风险判断 | 区分自动检查、运行界面、真实服务、真机与现场证据；据此输出风险和结论 |
 | `market-research-playbook` | 市场调研与产品沟通规范 | 负责竞品分析、用户问题提炼、方案比较和产品沟通支持 | 先问调研目标、对象和决策问题；区分事实、推断和建议 |
 | `project-memory-playbook` | 项目记忆规范 | 负责读取、校准和更新私有 `project-memory` 仓库，沉淀跨项目偏好、习惯、风格和决策 | 开始项目工作前先同步读取记忆；记忆稀疏时主动校准习惯；改过记忆时结束前单独提交并推送 |
 
@@ -84,23 +84,23 @@ python3 scripts/validate_project_playbook_install.py
 
 | Skill | 方向 | 主要用途 | 关键约束 |
 | --- | --- | --- | --- |
-| `admin-ui-design-playbook` | 商用后台 UI 设计 | 设计控制台、管理系统、数据后台、运营平台和企业移动工作台 | 先问风格、竞品、用户与任务；避免大标题、卡片墙和文字堆砌；强调后台布局、导航、tag、筛选区、表格规范和蓝白高密度移动业务界面 |
+| `admin-ui-design-playbook` | 商用后台 UI 设计 | 设计控制台、管理系统、数据后台、运营平台和企业移动工作台 | 已有系统先复用真实外壳和列表骨架；避免常驻说明横幅、大标题与卡片墙；企业移动业务界面保持紧凑 |
 
 ### Frontend And Mobile
 
 | Skill | 方向 | 主要用途 | 关键约束 |
 | --- | --- | --- | --- |
-| `frontend-development-playbook` | 前端开发规范 | 规范业务前端、后台前端和中后台工程实现 | 强调注释、分层、组件复用、表格与筛选容器抽象，并内嵌精简版 UI 基线 |
-| `ios-development-playbook` | iOS 开发规范 | 规范 Swift / SwiftUI / UIKit 项目开发 | 单文件单主类型；扩展拆分；注释、复用、组件化、模块化，并内嵌精简版 UI 基线 |
+| `frontend-development-playbook` | 前端开发规范 | 规范业务前端、后台前端和中后台工程实现 | 共享 UI 包保持展示边界；消费发布版本；真实 API 错误可见；复用既有后台骨架 |
+| `ios-development-playbook` | iOS 开发规范 | 规范 Swift / SwiftUI / UIKit 项目开发 | 单文件单主类型；扩展拆分；原生 SwiftUI 页面优先遵循系统导航、列表与反馈习惯 |
 | `android-development-playbook` | Android 开发规范 | 规范 Kotlin / Compose / Android 工程开发 | 单文件单主类型；UI / Domain / Data 分层；组件化与状态边界清晰，并内嵌精简版 UI 基线 |
-| `flutter-hybrid-development-playbook` | Flutter 混合开发规范 | 规范中大型 Flutter 和混合应用开发 | 强调功能拆分、组件化、package 化、桥接边界和 `melos` 管理，并内嵌精简版 UI 基线 |
+| `flutter-hybrid-development-playbook` | Flutter 混合开发规范 | 规范中大型 Flutter 和混合应用开发 | 外部服务适配隔离；共享包按契约/基础能力/设计组件分工；验证实际交互与原生运行边界 |
 | `react-native-development-playbook` | React Native 开发规范 | 规范 React Native 页面、导航、状态管理、原生桥接和共享模块开发 | 先问 `Expo / 裸 RN / 混合架构`；强调 screen 拆分、hook 化、状态边界、bridge 边界和商用品质 |
 
 ### Backend
 
 | Skill | 方向 | 主要用途 | 关键约束 |
 | --- | --- | --- | --- |
-| `java-development-playbook` | Java 后端开发规范 | 规范单体与微服务 Java 项目构建和架构重构 | 复用已确认的架构边界；单体默认技术分层；Controller、Service、MyBatis-Plus、Lombok、权限和架构门禁保持一致 |
+| `java-development-playbook` | Java 后端开发规范 | 规范单体与微服务 Java 项目构建和架构重构 | 保持分层与权限边界；多供应商能力用稳定契约隔离，敏感诊断脱敏，真实调用按覆盖范围验收 |
 | `go-development-playbook` | Go 后端开发规范 | 规范 Go API、服务、微服务和基础设施工具开发 | handler / service / repository 分层清晰；统一错误、日志、超时、测试和依赖边界 |
 | `python-development-playbook` | Python 后端开发规范 | 规范 Python API、worker、自动化工具和服务开发 | router / service / repository 分层清晰；统一校验、异常、测试、依赖和配置方式 |
 | `php-development-playbook` | PHP 后端开发规范 | 规范 PHP API、后台系统、异步任务和业务服务开发 | 先问框架类型；统一 Controller / Service / Repository 边界、异常、缓存、队列和安全策略 |

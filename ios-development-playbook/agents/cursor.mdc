@@ -13,3 +13,4 @@ When implementing iOS work:
 - Reuse shared components and services.
 - Comment public APIs, async behavior, and complex state.
 - If UI design is involved, also follow the repository's admin UI quality rules.
+- Native SwiftUI screens may use system large navigation titles, grouped lists, sheets, and progress feedback when appropriate.

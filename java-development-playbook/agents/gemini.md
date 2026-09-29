@@ -19,3 +19,4 @@ Use these instructions when building Java backend services.
 - `service` contains interfaces.
 - `service.impl` contains implementations.
 - Complex SQL belongs in `mapper.xml`.
+- Keep supplier integrations behind capability contracts, redact sensitive diagnostics, and verify real provider calls separately from tests.

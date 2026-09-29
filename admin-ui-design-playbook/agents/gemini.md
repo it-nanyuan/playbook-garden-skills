@@ -14,4 +14,5 @@ Use these instructions when generating admin UI, business dashboards, control pa
 - Avoid oversized titles, long explanatory text, and card walls.
 - Prefer structured layouts, restrained typography, and realistic operational flows.
 - For backend systems, emphasize navigation, filters, tables, state display, and efficiency.
+- Reuse existing shells and list patterns; begin dashboards with compact KPI/content and omit permanent explanation banners from routine management pages.
 - For enterprise mobile operations, prefer compact blue-white workflow screens with dense KPIs, charts, maps, progress, filters, bottom tabs, and stable status-color semantics.

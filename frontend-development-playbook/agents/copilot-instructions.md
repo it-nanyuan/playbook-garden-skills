@@ -13,3 +13,4 @@ Apply these rules when planning or implementing frontend work.
 - Keep comments meaningful.
 - Split responsibilities cleanly across pages, components, hooks, services, stores, and utilities.
 - Preserve professional admin UI behavior for filters, tables, navigation, and tags when relevant.
+- Keep shared UI packages presentation-only and use released versions; expose actual API errors instead of silent fixture fallback.
