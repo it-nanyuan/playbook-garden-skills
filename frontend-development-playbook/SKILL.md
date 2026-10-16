@@ -81,6 +81,8 @@ UI 相关规范可参考 `admin-ui-design-playbook`，本 skill 主要补工程�
 - 后台页面重点关注导航秩序、tag、筛选区、列表区、固定操作列和滚动规则
 - 页面要看起来像真实业务系统，而不是视觉概念图
 
+- 几何验收：先按父内容区确定边界和中轴，同一结果组及单个窄主按钮共轴、撑满按钮左右等距；用布局约束/token复用，检查共享组件与实例的窄屏/长文案/大字运行截图。对齐测量和例外见 `admin-ui-design-playbook` 的 Alignment And Geometry Gate；不把表单与常规右对齐操作区一律改成居中。
+
 ## Design Dependency
 
 如果任务涉及页面设计、界面布局、交互结构、后台视觉层级或组件呈现方式，默认同时遵循 `admin-ui-design-playbook`。

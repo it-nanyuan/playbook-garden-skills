@@ -67,6 +67,17 @@ description: Design professional admin pages, dashboards, operations consoles, a
 - 默认只输出页面本身，不追加大背景、说明区、卖点图标、设计注释和展示文案
 - 企业移动 App、MES / ERP、仓储、物流、路径、排程、生产管控类页面，默认可采用蓝白高密度运营风格：强蓝色顶栏、白色内容面、紧凑指标、清晰图表 / 地图 / 进度控件、轻分隔和稳定状态色，避免装饰性渐变、大卡片和口号式文字
 
+## Alignment And Geometry Gate
+
+设计稿与实现都必须通过对齐检查；这也适用于 App、桌面端、弹窗、结果页及空态。
+
+- 先确定父容器内容边界、左右内边距、中轴和文字基线；同一视觉组共用约束，不逐个手填坐标或用空格对齐。
+- 居中结果区的图标、标题、说明共用中轴；单个主按钮若比内容区窄，整体沿该中轴居中，若撑满则左右等距。标题栏的左标题/右关闭按钮按独立网格处理，不把表单、列表和常规右对齐操作区一律改为居中。
+- 相同角色复用间距 token；短文案不撑出巨型空框，长文案、大字和窄窗口自然换行/增高，不能靠偏移或固定高度挤出布局。
+- 交付前实际查看导出稿或运行截图，量出内容组/按钮中心偏差、左右边距与同排基线；检查共享组件及实际实例，发现明显偏移先修复再交付。编译通过和“看起来差不多”不能代替此检查。
+
+尺寸计算、结果弹窗反例及验收记录见 [references/visual-quality.md](references/visual-quality.md#alignment-and-geometry)。
+
 ## Admin Web Rules
 
 后台网页默认优先考虑 `Vue 3 + TypeScript + Element Plus` 或 `React + TypeScript + Ant Design`。

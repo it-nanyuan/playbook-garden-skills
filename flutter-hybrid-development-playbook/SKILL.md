@@ -81,6 +81,8 @@ description: Build maintainable Flutter-based hybrid applications with modular e
 - 对后台、工作台和数据密集型页面，默认采用专业、克制、真实业务系统风格
 - 通过共享组件、分组和布局表达层次，不靠装饰性和文字堆砌
 
+- 几何验收：先按父内容区确定边界和中轴，同一结果组及单个窄主按钮共轴、撑满按钮左右等距；用布局约束/token复用，检查共享组件与实例的窄屏/长文案/大字运行截图。对齐测量和例外见 `admin-ui-design-playbook` 的 Alignment And Geometry Gate；不把表单与常规右对齐操作区一律改成居中。
+
 ## Design Dependency
 
 如果任务涉及 Flutter 界面设计、组件呈现、业务页面结构、后台工作台或跨端视觉规范，默认同时参考 `admin-ui-design-playbook`。
