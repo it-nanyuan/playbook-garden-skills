@@ -1,4 +1,4 @@
 interface:
   display_name: "DBA Playbook"
   short_description: "数据库规范，负责表结构、SQL、索引、变更、备份与回滚安全。"
-  default_prompt: "Use $dba-playbook to plan or execute database work with strong review, backup, rollback, indexing, and production safety standards."
+  default_prompt: "Use $dba-playbook to plan or execute database work with strong review, backup, rollback, indexing, and production safety standards. 新项目或统一规范时同时遵循 $project-standards-playbook，保留已有项目参数。"

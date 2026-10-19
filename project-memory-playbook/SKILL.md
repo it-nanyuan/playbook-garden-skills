@@ -49,6 +49,10 @@ If network or GitHub auth is unavailable, read the local checkout and mention th
 
 4. Apply the memory quietly in the work. Mention only the memory that materially affects the current decision.
 
+## New Project Standards
+
+完成记忆读取后，遇到新产品、设计系统制定或跨页面规范统一，执行 `project-standards-playbook`。本机入口为 `$HOME/.codex/skills/project-standards-playbook/SKILL.md`，源码位于 `$HOME/Codex/playbook-garden-skills/project-standards-playbook`。共同标准和专项规则集中维护于该 skill；`/Users/NAN/UI/project-standards.md` 是 UI 目录索引。小修复只应用有关条款，不能把启动模板变成完整项目重启。读取规则不构成修改云端设计、其他项目或公共库的额外授权。
+
 ## Habit Calibration
 
 Read [references/habit-calibration.md](references/habit-calibration.md) when:

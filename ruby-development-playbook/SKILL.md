@@ -15,6 +15,7 @@ description: Build maintainable Ruby services and applications with clear archit
 - 如果 `memory/habits.md`、`memory/design-style.md` 或项目记录不足以指导当前任务，按 `project-memory-playbook` 的习惯校准流程处理，不要假装已经了解。
 - 工作中出现新的长期偏好、习惯信号或项目约定时，按 `project-memory-playbook` 写回记忆库，并让记忆提交与项目代码提交分开。
 - 如果本轮更新了记忆，任务结束前必须在 `$HOME/Codex/project-memory` 单独提交并推送；不要只停留在本地。若网络或 GitHub 鉴权失败，要明确报告未推送状态。
+- 新项目启动、设计系统制定或跨页面规范统一时，先执行 `project-standards-playbook`，按产品类型选择共同基线、端专项和启动模板；小修复只应用相关条款，既有确认参数不被默认值覆盖。
 
 ## Overview
 

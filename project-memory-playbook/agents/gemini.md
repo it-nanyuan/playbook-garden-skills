@@ -20,3 +20,7 @@ Use these instructions when a task should respect durable project memory.
 - Keep memory commits separate from unrelated project changes.
 - Do not leave updated memory local-only unless network or GitHub auth blocks the push; report that state clearly.
 - Do not store secrets, tokens, credentials, recovery information, noisy logs, or temporary scratch notes.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

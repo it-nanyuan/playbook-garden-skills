@@ -25,7 +25,7 @@
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 - [scripts/validate_project_playbook_install.py](scripts/validate_project_playbook_install.py)
 
-当前仓库规范版本：`0.3.7`。
+当前仓库规范版本：`0.4.0`。
 
 推荐读取顺序：
 
@@ -67,6 +67,10 @@
 python3 scripts/validate_project_playbook_install.py
 ```
 
+## Cross-Project Standards
+
+新项目、设计系统制定和跨页面规范统一先使用 [project-standards-playbook](project-standards-playbook/SKILL.md)，按产品类型读取共同基线、专项和启动模板。已有确认参数优先于默认建议，原型、构建、运行与真实服务分别验收；小修复不重启完整流程。
+
 ## Skill Map
 
 ### Collaboration
@@ -78,6 +82,7 @@ python3 scripts/validate_project_playbook_install.py
 | `product-manager-playbook` | 产品经理调度规范 | 负责需求澄清、范围拆解、验收定义、总结汇报和 skill 路由 | 先问业务目标、用户、范围和阶段；默认按顺序协调调研、设计、开发、测试、数据、运维与交付 skill |
 | `testing-playbook` | 测试规范 | 负责测试拆解、用例设计、回归验证、缺陷闭环和上线风险判断 | 区分自动检查、运行界面、真实服务、真机与现场证据；据此输出风险和结论 |
 | `market-research-playbook` | 市场调研与产品沟通规范 | 负责竞品分析、用户问题提炼、方案比较和产品沟通支持 | 先问调研目标、对象和决策问题；区分事实、推断和建议 |
+| `project-standards-playbook` | 项目统一标准 | 24条共同规则、端专项、参数对照、来源与启动模板 | 共同标准与项目参数分离；按范围应用；同步规范源与安装版 |
 | `project-memory-playbook` | 项目记忆规范 | 负责读取、校准和更新私有 `project-memory` 仓库，沉淀跨项目偏好、习惯、风格和决策 | 开始项目工作前先同步读取记忆；记忆稀疏时主动校准习惯；改过记忆时结束前单独提交并推送 |
 
 ### Design
@@ -259,6 +264,7 @@ python3 scripts/validate_project_playbook_install.py
 - 测试规范
 - 市场调研与产品沟通规范
 - 项目记忆读取与沉淀规范
+- 跨项目设计开发统一标准与新项目启动模板
 - 商用后台 UI 设计规范
 - 前端工程规范
 - iOS / Android / Flutter / React Native 开发规范

@@ -4,6 +4,18 @@ All notable changes to this repository will be documented in this file.
 
 The format loosely follows Keep a Changelog.
 
+## [0.4.0] - 2026-10-18
+
+### Added
+
+- 新增 project-standards-playbook：24条设计开发共同规则、移动/后台/桌面专项、已有项目参数边界、证据来源和新项目启动模板。
+- 新入口区分确认规则、默认建议、专项和待审方案，保留最新修订及设计/实现证据差异。
+
+### Changed
+
+- 项目型 playbook 的前置段、平台适配与项目记忆流程接入统一标准；小修复只应用相关条款。
+- 安装校验增加统一标准入口及细则完整性检查，确保规范源与本机安装一致。
+
 ## [0.3.7] - 2026-09-29
 
 ### Changed

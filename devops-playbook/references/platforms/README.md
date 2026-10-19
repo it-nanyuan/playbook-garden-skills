@@ -14,3 +14,7 @@ This skill provides platform-facing DevOps safety instructions.
 
 - `SKILL.md` remains the source of operational discipline.
 - Preserve rollback, observability, and configuration traceability across platforms.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。 细则保持在统一标准 skill 中，本适配入口不复制参数表。

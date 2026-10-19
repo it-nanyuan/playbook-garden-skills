@@ -15,3 +15,7 @@
 - Controller 或 Endpoint 不承载完整业务流程
 - 日志、异常、返回体、缓存和消息策略统一
 - 注释必须说明职责、边界和副作用
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

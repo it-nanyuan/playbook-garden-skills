@@ -17,3 +17,7 @@ Use this playbook before project work that needs durable user preferences or pro
 - Keep memory updates concise and commit them separately.
 - If memory changed during the task, push the separate memory commit before finishing; do not leave updated memory only in the local checkout.
 - Never store secrets, credentials, tokens, recovery details, temporary logs, or low-confidence guesses.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

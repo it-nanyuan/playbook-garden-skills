@@ -156,6 +156,18 @@ def main() -> int:
         failures.extend(compare_directories(source, installed))
         failures.extend(validate_preflight(source / "SKILL.md"))
 
+    standards_root = repo_root / "project-standards-playbook"
+    for relative in ("references/standards.md", "references/platform-profiles.md",
+                     "references/project-start-template.md", "references/evidence.md"):
+        if not (standards_root / relative).is_file():
+            failures.append(f"missing standards reference: {standards_root / relative}")
+    for slug in playbooks:
+        if slug == "project-standards-playbook":
+            continue
+        skill_path = repo_root / slug / "SKILL.md"
+        if skill_path.is_file() and "`project-standards-playbook`" not in skill_path.read_text(encoding="utf-8"):
+            failures.append(f"missing shared standards route: {skill_path}")
+
     if failures:
         print("Project-facing playbook install validation failed:", file=sys.stderr)
         for failure in failures:

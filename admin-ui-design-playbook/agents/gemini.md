@@ -16,3 +16,7 @@ Use these instructions when generating admin UI, business dashboards, control pa
 - For backend systems, emphasize navigation, filters, tables, state display, and efficiency.
 - Reuse existing shells and list patterns; begin dashboards with compact KPI/content and omit permanent explanation banners from routine management pages.
 - For enterprise mobile operations, prefer compact blue-white workflow screens with dense KPIs, charts, maps, progress, filters, bottom tabs, and stable status-color semantics.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

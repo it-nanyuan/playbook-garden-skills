@@ -19,3 +19,7 @@ Apply these rules when planning or implementing Java backend work.
 - Keep `SecurityFilterChain` coarse and action roles in `@PreAuthorize`, with minimal early guards for privileged writes.
 - Pick Redis, MQ, Elasticsearch, registry, gateway, tracing, and transaction tools only when the business actually needs them.
 - Keep supplier SDK/HTTP types behind capability contracts, redact sensitive logging, and scope real-provider verification claims to the requests actually made.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

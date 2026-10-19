@@ -1,4 +1,4 @@
 interface:
   display_name: "iOS Development Playbook"
   short_description: "Build maintainable iOS apps with clear standards"
-  default_prompt: "Use $ios-development-playbook to build maintainable iOS features with clear structure and reuse. For native SwiftUI screens, follow system navigation, lists, sheets, and feedback instead of importing admin-dashboard chrome."
+  default_prompt: "Use $ios-development-playbook to build maintainable iOS features with clear structure and reuse. For native SwiftUI screens, follow system navigation, lists, sheets, and feedback instead of importing admin-dashboard chrome. 新项目或统一规范时同时遵循 $project-standards-playbook，保留已有项目参数。"

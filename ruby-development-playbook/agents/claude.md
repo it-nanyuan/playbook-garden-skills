@@ -14,3 +14,7 @@
 - 保持 controller / service / model / query / job / serializer 边界清晰
 - 不要让 Model 或 Controller 无限膨胀
 - 任务逻辑必须明确重试、幂等和失败补偿
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

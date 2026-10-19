@@ -15,3 +15,7 @@ Apply these rules when planning or implementing Flutter work.
 - Split pages, widgets, state, services, repositories, and packages clearly.
 - Use `melos`-style thinking for medium and large codebases.
 - Put external clients behind app-owned interfaces, consume versioned shared packages, and keep business state outside shared UI primitives.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

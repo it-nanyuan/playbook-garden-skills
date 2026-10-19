@@ -50,3 +50,7 @@ Choose the prefix based on the main purpose of the change.
 - Prefer explicit verbs such as "新增", "支持", "优化", "修复", "调整", or "重构" when writing in Chinese.
 - Do not write vague summaries like "修改代码" or "优化功能".
 - If the change includes `.gitignore` updates, mention that explicitly in the numbered list.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

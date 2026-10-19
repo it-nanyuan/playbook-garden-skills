@@ -1,4 +1,4 @@
 interface:
   display_name: "Testing Playbook"
   short_description: "测试规范，负责测试拆解、用例设计、验收验证、回归与缺陷闭环。"
-  default_prompt: "Use $testing-playbook for test planning, regression, and acceptance. Verify UI in a running surface and API changes against a running service when feasible; report automated, runtime, device, and field evidence separately."
+  default_prompt: "Use $testing-playbook for test planning, regression, and acceptance. Verify UI in a running surface and API changes against a running service when feasible; report automated, runtime, device, and field evidence separately. 新项目或统一规范时同时遵循 $project-standards-playbook，保留已有项目参数。"

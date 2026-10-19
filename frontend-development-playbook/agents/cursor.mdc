@@ -13,3 +13,7 @@ When implementing frontend work:
 - Avoid oversized page files and repeated logic.
 - When pages involve admin UI, follow the repository's admin UI quality standards too.
 - Shared UI packages provide presentation components; apps retain API, routing, stores, permissions, and domain models. Surface real API errors.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

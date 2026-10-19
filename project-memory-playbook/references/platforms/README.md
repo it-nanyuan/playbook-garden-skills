@@ -22,3 +22,7 @@
 3. 最后检查本目录的平台说明是否仍然准确。
 
 当维护 `Project Memory Preflight` 或同步安装版时，还要运行根目录的 `scripts/validate_project_playbook_install.py`，确认所有 project-facing playbook 在源码目录与 `$HOME/.codex/skills` 安装目录中完全一致。
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。 细则保持在统一标准 skill 中，本适配入口不复制参数表。

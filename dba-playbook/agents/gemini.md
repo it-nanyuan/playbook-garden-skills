@@ -14,3 +14,7 @@ Use these instructions when handling database work.
 - Treat production data changes as high-risk by default.
 - Use explicit conditions.
 - Preserve schema and SQL comments.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

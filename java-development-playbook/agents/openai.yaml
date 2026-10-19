@@ -1,4 +1,4 @@
 interface:
   display_name: "Java Development Playbook"
   short_description: "Java 后端构建与重构规范，覆盖单体分层、MyBatis-Plus、Lombok、权限与架构门禁。"
-  default_prompt: "Use $java-development-playbook to preserve the confirmed architecture and implement clear Java layers. Keep external provider details behind capability contracts, redact sensitive diagnostics, and distinguish isolated protocol tests from real supplier calls."
+  default_prompt: "Use $java-development-playbook to preserve the confirmed architecture and implement clear Java layers. Keep external provider details behind capability contracts, redact sensitive diagnostics, and distinguish isolated protocol tests from real supplier calls. 新项目或统一规范时同时遵循 $project-standards-playbook，保留已有项目参数。"

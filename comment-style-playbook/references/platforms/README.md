@@ -14,3 +14,7 @@ This skill provides platform-facing comment style instructions.
 
 - `SKILL.md` remains the source of comment rules.
 - `references/examples.md` provides concrete good/bad examples.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。 细则保持在统一标准 skill 中，本适配入口不复制参数表。

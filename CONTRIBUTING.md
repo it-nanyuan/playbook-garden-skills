@@ -37,6 +37,10 @@ python3 scripts/validate_project_playbook_install.py
 
 这个脚本会从 `skills-index.json` 枚举所有 project-facing playbook，比较源码目录和 `$HOME/.codex/skills` 里的安装目录，并检查 `SKILL.md` 是否仍包含必要的 `Project Memory Preflight` 语义。
 
+## Cross-Project Standards
+
+项目型 playbook 的前置段及平台入口须保留 `project-standards-playbook` 路由。新项目/设计系统/跨页面规范统一按该 skill 选择适用规则，小修复只应用有关条款；不要在各 skill 复制整套尺寸。更新通用规则须记录来源、范围与替代关系，随后同步安装版并运行一致性检查。
+
 ## Front Matter Contract
 
 `SKILL.md` 的 frontmatter 最少包含：

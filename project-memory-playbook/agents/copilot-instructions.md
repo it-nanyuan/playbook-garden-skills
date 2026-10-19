@@ -28,3 +28,7 @@ Apply these rules before project planning, design, implementation, debugging, or
 - Prefer updating an existing memory section over duplicating entries.
 - When habits are sparse or the user says preferences are not understood, follow `references/habit-calibration.md`.
 - If push fails because of network or GitHub auth, say that the latest memory is still local and preserve the local changes.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

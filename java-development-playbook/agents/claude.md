@@ -19,3 +19,7 @@ Use this instruction set when implementing Java backend work.
 - Keep URL-level security coarse, use `@PreAuthorize` for action roles, and preserve pre-validation denial for privileged writes.
 - Comment business rules, transactions, cache behavior, async consumers, and scheduled jobs clearly.
 - Keep external Provider details behind capability contracts, redact sensitive diagnostics, and verify actual supplier calls separately from isolated protocol tests.
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。

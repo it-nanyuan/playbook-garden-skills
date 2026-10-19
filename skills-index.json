@@ -1,15 +1,20 @@
 {
   "schema_version": "1.0.0",
   "repo_name": "playbook-garden-skills",
-  "repo_version": "0.3.7",
+  "repo_version": "0.4.0",
   "default_language": "zh-CN",
-  "skill_count": 23,
+  "skill_count": 24,
   "changelog_path": "CHANGELOG.md",
-  "generated_at": "2026-09-29",
+  "generated_at": "2026-10-18",
   "global_preflight": {
     "skill": "project-memory-playbook",
     "applies_to": "all project-facing playbooks except project-memory-playbook itself",
     "rule": "Before real project work, sync and read $HOME/Codex/project-memory; calibrate habits when memory is insufficient; write durable preferences and project conventions back separately from project commits; if memory changed during the task, commit and push the memory repository before finishing."
+  },
+  "global_standards": {
+    "skill": "project-standards-playbook",
+    "applies_to": "new products, design systems and cross-page standards consolidation",
+    "rule": "After project memory, choose common rules, platform profile and project parameters; preserve confirmed values, scoped exceptions and evidence boundaries. Small fixes apply relevant rules only."
   },
   "validation": {
     "project_facing_playbook_install": {
@@ -482,6 +487,30 @@
           "gemini": "devops-playbook/agents/gemini.md"
         },
         "platforms": "devops-playbook/references/platforms/README.md"
+      }
+    },
+    {
+      "name": "Project Standards Playbook",
+      "slug": "project-standards-playbook",
+      "path": "project-standards-playbook",
+      "category": "collaboration",
+      "default_language": "zh-CN",
+      "description": "执行跨项目设计开发基线、端专项、组件复用与新项目启动模板。",
+      "recommended_with": [
+        "project-memory-playbook",
+        "product-manager-playbook",
+        "testing-playbook"
+      ],
+      "entrypoints": {
+        "skill": "project-standards-playbook/SKILL.md",
+        "agents": {
+          "openai": "project-standards-playbook/agents/openai.yaml",
+          "claude": "project-standards-playbook/agents/claude.md",
+          "copilot": "project-standards-playbook/agents/copilot-instructions.md",
+          "cursor": "project-standards-playbook/agents/cursor.mdc",
+          "gemini": "project-standards-playbook/agents/gemini.md"
+        },
+        "platforms": "project-standards-playbook/references/platforms/README.md"
       }
     }
   ]

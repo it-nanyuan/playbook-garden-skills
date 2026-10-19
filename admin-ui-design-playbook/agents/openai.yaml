@@ -1,4 +1,4 @@
 interface:
   display_name: "Admin UI Design Playbook"
   short_description: "Design professional commercial admin interfaces"
-  default_prompt: "Use $admin-ui-design-playbook to design a professional admin UI from the existing product shell and user context. Reuse established navigation, tabs, filters, tables, and dialogs; keep dashboards compact and management lists free of persistent explanatory banners. For enterprise mobile operations, prefer compact blue-white workflow screens with consistent status colors."
+  default_prompt: "Use $admin-ui-design-playbook to design a professional admin UI from the existing product shell and user context. Reuse established navigation, tabs, filters, tables, and dialogs; keep dashboards compact and management lists free of persistent explanatory banners. For enterprise mobile operations, prefer compact blue-white workflow screens with consistent status colors. 新项目或统一规范时同时遵循 $project-standards-playbook，保留已有项目参数。"

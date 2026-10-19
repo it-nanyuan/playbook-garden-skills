@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目统一标准"
+  short_description: "整理并执行跨项目设计开发标准，按产品类型选择专项规范与新项目启动流程"
+  default_prompt: "使用 $project-standards-playbook，按现有统一标准启动项目，确定适用规则、组件复用、设计参数与验收条件。"

@@ -14,3 +14,7 @@
 - 保持 `screen / components / hooks / store / service / bridge` 职责清晰
 - 不要把请求、状态、导航和页面展示全部堆在一个 screen 文件
 - 混合项目要特别注意 RN 与原生宿主边界
+
+## Cross-Project Standards
+
+新项目启动、设计系统制定或跨页面规范统一时，先读取 `project-standards-playbook/SKILL.md` 及其适用细则；小修复按影响范围应用，保留已有确认参数。
